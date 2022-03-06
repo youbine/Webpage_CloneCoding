@@ -51,20 +51,64 @@
   background-color: black;
 }
 
-.notice__left p {
+.notice__left__inner {
+  width: 75%;
+  height: 100%;
+  position: relative;
+  margin: 0 0 0 25%;
+  align-items: center;
+  display: flex;
+}
+
+.notice__left__inner p {
   text-indent: -10000px;
   background-image: url(https://www.starbucks.co.kr/common/img/common/notice_ttl.png);
   background-position: center;
   background-size: 4.5rem auto;
   width: 4.5rem;
   position: absolute;
-  left: 12rem;
-  top: 1.2rem;
+  left: 0;
 }
 
-.notice__lef a {
-  width: 2rem;
-  height: 2rem;
+.notice__left__inner ul {
+  width: 60%;
   position: absolute;
-  left: 0;
+  left: 6rem;
+  font-size: 0.9rem;
+}
+
+.notice__left__inner li {
+  animation: scroll-up 0.5s ease-out;
+}
+
+.notice__left__inner a {
+  width: 100%;
+  display: inline-block;
+  color: white;
+}
+
+.plus {
+  background: url(https://www.starbucks.co.kr/common/img/common/btn_notice_plus.png)
+    no-repeat center;
+  background-size: 100%;
+  width: 2.3rem;
+  height: 100%;
+  position: absolute;
+  right: 1rem;
+}
+
+.plus a {
+  height: inherit;
+  width: 100%;
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: scaleY(0);
+    transform-origin: 100% 0%;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: 100% 0%;
+  }
 }
