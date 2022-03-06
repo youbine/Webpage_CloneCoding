@@ -1,0 +1,71 @@
+.reserve {
+  background-color: #f5e7cc;
+  height: 25rem;
+  width: 100%;
+  position: relative;
+}
+
+.reserve__wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.reserve__wrap img {
+  margin-top: 5rem;
+  margin-right: auto;
+  width: 30rem;
+  height: 10rem;
+  z-index: 50;
+}
+
+.reserve__btn {
+  font-size: 0.9rem;
+  line-height: 2.2rem;
+  border: 2px solid #b9813e;
+  border-radius: 5px;
+  text-align: center;
+  color: #b9813e;
+  width: 8rem;
+  margin-top: 1.3rem;
+  margin-left: 17rem;
+  display: block;
+  z-index: 50;
+  transition: background-color 1s, color 1s;
+}
+
+.reserve__btn:hover {
+  background-color: #b9813e;
+  color: white;
+  transition: background-color 1s, color 1s;
+}
+
+.reserve__drink {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+
+.reserve__drink img {
+  width: auto;
+  height: 100%;
+  right: -6rem;
+  position: absolute;
+  max-width: auto;
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1700px) {
+  .reserve__drink img {
+    right: -20rem;
+  }
+}
+
+@media screen and (min-width: 1701px) and (max-width: 1800px) {
+  .reserve__drink img {
+    right: -13rem;
+  }
+}

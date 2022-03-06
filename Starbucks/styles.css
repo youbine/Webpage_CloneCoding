@@ -1,0 +1,25 @@
+@import "css/reset.css";
+@import "css/nav-header.css";
+@import "css/section-visual.css";
+@import "css/notice.css";
+@import "css/rewards.css";
+@import "css/reserve.css";
+@import "css/dropdown.css";
+@import "css/favorite.css";
+@import "css/magazine.css";
+@import "css/store.css";
+@import "css/footer.css";
+
+html {
+  height: 100vh;
+  width: 100%;
+  font-size: 16px;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+.float {
+  position: fixed;
+  top: 9rem;
+  right: 5rem;
+  z-index: 100;
+}

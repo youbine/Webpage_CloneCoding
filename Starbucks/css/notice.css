@@ -1,0 +1,70 @@
+.notice {
+  height: 3.8rem;
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.notice__right {
+  align-items: center;
+  height: 100%;
+  width: 45%;
+  position: absolute;
+  right: 0;
+  background-color: #f5f4ef;
+}
+
+.notice__right a {
+  align-items: center;
+  display: flex;
+  position: absolute;
+  height: 2.25rem;
+  width: 15rem;
+  left: 30%;
+  top: 0.8rem;
+}
+
+.notice__right p {
+  top: 9px;
+  position: absolute;
+  text-indent: -10000px;
+  background-position: center;
+  background-image: url(https://www.starbucks.co.kr/common/img/common/prom_ttl_b.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 8rem;
+  height: 1.1rem;
+}
+
+.notice__right span {
+  width: 2rem;
+  position: absolute;
+  right: 0;
+}
+
+.notice__left {
+  width: 55%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  color: white;
+  background-color: black;
+}
+
+.notice__left p {
+  text-indent: -10000px;
+  background-image: url(https://www.starbucks.co.kr/common/img/common/notice_ttl.png);
+  background-position: center;
+  background-size: 4.5rem auto;
+  width: 4.5rem;
+  position: absolute;
+  left: 12rem;
+  top: 1.2rem;
+}
+
+.notice__lef a {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+}

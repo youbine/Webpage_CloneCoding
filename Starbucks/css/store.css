@@ -1,0 +1,90 @@
+.sbstore {
+  background: url(https://www.starbucks.co.kr/common/img/main/store_bg.jpg)
+    no-repeat;
+  background-size: cover;
+  height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sbstore__wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 62rem;
+  height: 100%;
+}
+
+.sbstore__wrap img:first-child {
+  position: absolute;
+}
+
+.sbstore__wrap img:nth-child(2) {
+  position: absolute;
+  bottom: 1rem;
+  left: 14rem;
+}
+
+.sbstore__storepic {
+  position: absolute;
+  right: -8rem;
+  bottom: 0;
+}
+
+.sbstore__coffeebeans {
+  position: absolute;
+  right: 30%;
+  top: -4rem;
+}
+
+.sbstore__slide.first {
+  position: absolute;
+  right: 0;
+  top: 30%;
+  transition: all 2s;
+  opacity: 0;
+  transform: translateX(200%);
+}
+
+.sbstore__slide.second {
+  position: absolute;
+  bottom: 38%;
+  right: 1rem;
+  transition: all 2.5s;
+  opacity: 0;
+  transform: translateX(200%);
+}
+
+.scrollIn.sbstore__slide.first,
+.scrollIn.sbstore__slide.second {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.sbstore__btn {
+  position: absolute;
+  font-size: 0.9rem;
+  line-height: 2.2rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-align: center;
+  color: black;
+  width: 7.5rem;
+  display: block;
+  bottom: 20%;
+  /* right: 16rem; */
+  right: -50rem;
+  opacity: 0;
+  background-color: none;
+}
+
+.scrollIn.sbstore__btn {
+  opacity: 1;
+  right: 16rem;
+  transition: opacity 3s, right 3s;
+}
+
+.sbstore__btn:hover {
+  background-color: black;
+  color: #ffffff;
+  transition: background-color 1s, color 1s;
+}
