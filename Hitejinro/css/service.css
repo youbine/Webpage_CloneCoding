@@ -1,0 +1,60 @@
+.service {
+  background-color: #f4f4f4;
+  height: 65rem;
+  width: 100%;
+}
+
+.service__wrap {
+  margin: 0 auto;
+  width: 67rem;
+  height: 100%;
+}
+
+.service__title {
+  padding: 4rem 0 2rem 0;
+}
+
+.service__contents {
+  position: relative;
+  width: 100%;
+  height: 50.4rem;
+}
+
+.content {
+  position: absolute;
+}
+.content.__1 {
+  left: 0;
+  top: 0;
+}
+.content.__2 {
+  left: 16.9rem;
+}
+.content.__2 img {
+  height: 33.3rem;
+}
+.content.__3 {
+  left: 33.8rem;
+}
+.content.__4 {
+  right: 0;
+}
+.content.__5 {
+  top: 17rem;
+}
+.content.__6 {
+  top: 17rem;
+  right: 0;
+}
+.content.__7 {
+  left: 0;
+  bottom: 0;
+}
+.content.__8 {
+  left: 17rem;
+  bottom: 0;
+}
+.content.__9 {
+  bottom: 0;
+  right: 0;
+}

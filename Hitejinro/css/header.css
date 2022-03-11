@@ -1,0 +1,70 @@
+.header__logo {
+  display: block;
+  background-color: #f5f5f5;
+  height: 2.5rem;
+  width: 100%;
+  text-align: center;
+}
+.header__logo a {
+  display: inline-block;
+  width: 6rem;
+  height: 100%;
+}
+.header__logo img {
+  margin-top: 0.5rem;
+}
+.header__navs {
+  display: block;
+  background-color: #ffffff;
+  height: 6rem;
+  width: 100%;
+}
+.header__navs__inner {
+  height: 100%;
+  width: 70rem;
+  margin: 0 auto;
+  position: relative;
+}
+.header__navs__inner li {
+  float: left;
+}
+.navs__menu {
+  background: url(https://www.hitejinro.com/assets/images/common/gnb_official_menu_4.jpg)
+    no-repeat 100%;
+  height: 6.25rem;
+  width: 50rem;
+  background-position: left;
+}
+.navs__menu li:first-child {
+  padding-left: 0;
+}
+.navs__menu li:last-child {
+  padding-right: 0;
+  margin-right: 0;
+}
+.navs__menu li {
+  padding: 2.5rem 4rem 0 3rem;
+  margin-right: 1.5rem;
+}
+.navs__menu a {
+  padding-bottom: 2.5rem;
+  color: black;
+  display: inline-block;
+  opacity: 0;
+}
+.navs__member {
+  float: right;
+  font-weight: 700;
+  font-size: 0.6rem;
+  color: #696969b4;
+  height: 100%;
+  width: 15rem;
+  right: 0;
+  top: 0;
+  margin-top: 2.8rem;
+  position: absolute;
+}
+.navs__member a {
+  color: #696969b4;
+  margin-right: 1rem;
+}

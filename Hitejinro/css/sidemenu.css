@@ -1,0 +1,75 @@
+aside {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #2f3339;
+  height: 100%;
+  overflow: hidden;
+  width: 6.25rem;
+  transition: width 0.3s ease-in-out;
+}
+.side__wrap {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.side__logo {
+  width: 6.25rem;
+  height: 2.5rem;
+  background: url(https://www.hitejinro.com/assets/images/common/gnb_brand_menu_1.png)
+    no-repeat;
+}
+
+.side__menu {
+  position: absolute;
+  left: 0;
+  height: 100%;
+}
+.side__menu li {
+  cursor: pointer;
+  text-indent: -10000px;
+}
+
+.liquor.__beer {
+  height: 6rem;
+  width: 6.25rem;
+  background: url(https://www.hitejinro.com/assets/images/common/gnb_brand_menu_2.png)
+    no-repeat;
+  background-position: 0 0;
+}
+.liquor.__soju {
+  height: 6rem;
+  background: url(https://www.hitejinro.com/assets/images/common/gnb_brand_menu_2.png)
+    no-repeat;
+  background-position: 0 -6.5rem;
+}
+.liquor.__whisky {
+  height: 6rem;
+  background: url(https://www.hitejinro.com/assets/images/common/gnb_brand_menu_2.png)
+    no-repeat;
+  background-position: 0 -12.5rem;
+}
+.liquor.__wine {
+  height: 6rem;
+  background: url(https://www.hitejinro.com/assets/images/common/gnb_brand_menu_2.png)
+    no-repeat;
+  background-position: 0 -19rem;
+}
+.liquor.__sake {
+  height: 6rem;
+  background: url(https://www.hitejinro.com/assets/images/common/gnb_brand_menu_2.png)
+    no-repeat;
+  background-position: 0 -37.5rem;
+}
+.liquor.__another {
+  height: 6rem;
+  background: url(https://www.hitejinro.com/assets/images/common/gnb_brand_menu_2.png)
+    no-repeat;
+  background-position: 0 -25.5rem;
+}
+.liquor.__international {
+  height: 6rem;
+  background: url(https://www.hitejinro.com/assets/images/common/gnb_brand_menu_2.png)
+    no-repeat;
+  background-position: 0 -31.5rem;
+}

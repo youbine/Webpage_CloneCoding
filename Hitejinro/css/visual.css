@@ -1,0 +1,124 @@
+.visual {
+  display: block;
+  height: 30rem;
+  width: 100%;
+  overflow: hidden;
+}
+.visual__wrap {
+  display: block;
+  position: relative;
+}
+.visual__images {
+  transform: translate3d(0, 0px, 0px);
+  width: 1350rem;
+  margin-left: -17%;
+  transition: all 0.4s ease 0s;
+}
+.visual__image {
+  margin: auto;
+  display: block;
+  float: left;
+  width: 150rem;
+}
+.visual__btn.Left {
+  background: url(https://www.hitejinro.com/assets/images/main/btn_main_prev.png)
+    no-repeat 1.5rem center;
+  left: 7rem;
+}
+.visual__btn.Right {
+  background: url(https://www.hitejinro.com/assets/images/main/btn_main_next.png)
+    no-repeat right 1.5rem center;
+  right: 7rem;
+}
+.visual__btn.Left,
+.visual__btn.Right {
+  top: 13rem;
+  font-size: 0.8rem;
+  color: black;
+  position: absolute;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: rgba(255, 255, 255, 0.473);
+  border-radius: 50px;
+  border: none;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+.visual__btn > span {
+  color: rgba(54, 55, 73, 0.7);
+  width: 6rem;
+  line-height: 3.5rem;
+  position: absolute;
+  top: 0;
+}
+.visual__btn.Right span {
+  right: 3rem;
+}
+.visual__btn.Left span {
+  left: 3rem;
+}
+.visual__btn.Left:hover,
+.visual__btn.Right:hover {
+  width: 10rem;
+}
+.visual__dots {
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, 27rem);
+  position: absolute;
+  width: 20rem;
+  height: 2rem;
+  text-align: center;
+  cursor: pointer;
+}
+.dot {
+  display: inline-block;
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: none;
+  position: relative;
+}
+.current {
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.733);
+  animation: scale-up 0.4s;
+}
+.dot span {
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.815);
+}
+@keyframes scale-up {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media screen and (min-width: 1100px) and (max-width: 1300px) {
+  .visual__images {
+    margin-left: -60%;
+  }
+}
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+  .visual__images {
+    margin-left: -45%;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1700px) {
+  .visual__images {
+    margin-left: -35%;
+  }
+}
+@media screen and (min-width: 1700px) and (max-width: 1800px) {
+  .visual__images {
+    margin-left: -25%;
+  }
+}
+
