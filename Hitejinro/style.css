@@ -1,11 +1,11 @@
-@import "css/reset.css";
-@import "css/header.css";
-@import "css/visual.css";
-@import "css/service.css";
-@import "css/sns.css";
-@import "css/footer.css";
-@import "css/sidemenu.css";
-@import "css/sidemenuSub.css";
+@import "components/css/reset.css";
+@import "components/css/header.css";
+@import "components/css/visual.css";
+@import "components/css/service.css";
+@import "components/css/sns.css";
+@import "components/css/footer.css";
+@import "components/css/sidemenu.css";
+@import "components/css/sidemenuSub.css";
 
 html,
 body {
@@ -16,4 +16,23 @@ body {
 }
 .body__wrap {
   padding-right: 6.25rem;
+}
+.scroll {
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.3s ease-in;
+}
+.scroll span {
+  position: fixed;
+  bottom: 0;
+  right: 15rem;
+  width: 3rem;
+  height: 3rem;
+  text-align: right;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #004cad;
+  background: url(https://www.hitejinro.com/assets/images/common/icon_top.png)
+    no-repeat 0 0;
+  z-index: 300;
 }

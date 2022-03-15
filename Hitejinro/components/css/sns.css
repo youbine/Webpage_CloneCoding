@@ -1,0 +1,78 @@
+.sns {
+  height: 20rem;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.sns__wrap {
+  width: 67rem;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.sns__title {
+  padding: 2.5rem 0 2.5rem 0;
+}
+.sns__list__inner {
+  height: 100%;
+  width: 201rem;
+  transform: translate3d(0rem, 0px, 0px);
+  transition: all 0.4s ease 0s;
+}
+.sns__list {
+  display: block;
+  float: left;
+  width: 67rem;
+  height: 100%;
+}
+.sns__list li {
+  float: left;
+  height: 100%;
+  width: 22rem;
+  display: flex;
+}
+.instagram {
+  margin-right: 1rem;
+}
+.sns__list div {
+  margin: 1rem 0rem 1rem 1rem;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.7;
+  word-break: keep-all;
+}
+.sns__list div a {
+  color: black;
+  line-height: 1.1rem;
+}
+.sns__list div a:first-child {
+  font-size: 0.9rem;
+  font-weight: bolder;
+  margin-bottom: 0.8rem;
+}
+.sns__list img {
+  height: 6.25rem;
+  width: 6.25rem;
+  border-radius: 3rem;
+}
+.sns__dots {
+  position: absolute;
+  left: 48%;
+  bottom: 1rem;
+  width: 5rem;
+  height: 3rem;
+  text-align: center;
+}
+.sns__dot {
+  float: left;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 16px;
+  background-color: #808080;
+  margin: 0.3rem;
+  cursor: pointer;
+}
+.current__sns {
+  background-color: black;
+}

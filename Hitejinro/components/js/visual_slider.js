@@ -26,13 +26,12 @@ const toggleBtn = (click) => {
 const toggleDot = (click) => {
   slideImages((index = click));
 };
-//event 지우고 setTimeout설정해보기
-function slideImages(event) {
+function slideImages() {
   let i;
-  if (event > image.length) {
+  if (index > image.length) {
     index = 1;
   }
-  if (event <= 0) {
+  if (index <= 0) {
     index = image.length;
   }
   //현재 dot빼고 나머지 dot class지워주기
@@ -48,6 +47,3 @@ function slideImages(event) {
     : "";
   index === 1 ? (btnLeft.innerText = slideTitles[index + 7]) : "";
 }
-
-slideImages();
-setInterval(slideImages, 1000);
