@@ -9,16 +9,16 @@
   position: relative;
 }
 .visual__images {
-  transform: translate3d(0, 0px, 0px);
-  width: 1350rem;
+  height: 100%;
+  width: 4000rem;
   margin-left: -17%;
-  transition: all 0.4s ease 0s;
 }
 .visual__image {
-  margin: auto;
   display: block;
   float: left;
+  height: 100%;
   width: 150rem;
+  height: 2rem;
 }
 .visual__btn.Left {
   background: url(https://www.hitejinro.com/assets/images/main/btn_main_prev.png)
@@ -121,4 +121,3 @@
     margin-left: -25%;
   }
 }
-

@@ -15,9 +15,7 @@
 }
 .sns__list__inner {
   height: 100%;
-  width: 201rem;
-  transform: translate3d(0rem, 0px, 0px);
-  transition: all 0.4s ease 0s;
+  width: 335rem;
 }
 .sns__list {
   display: block;
