@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&family=Noto+Sans+KR&family=Nunito:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/91d96dc762.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>국립중앙박물관</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__wrap">
+        <img class="header__logo" src="components/img/Emblem.png" />
+        <ul class="header__menu">
+          <li>관람 정보</li>
+          <li>전시</li>
+          <li>교육·행사</li>
+          <li>소장품</li>
+          <li>학술·출판</li>
+          <li>소식·참여</li>
+          <li>박물관 소개</li>
+        </ul>
+        <ul class="header__login">
+          <li>로그인</li>
+          <li>회원가입</li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="top">
+      <video autoplay controls>
+        <source src="components/img/life_teaser.mp4" type="video/mp4" />
+      </video>
+      <div class="scroll" onClick="javascript:window.scrollTo(0, 1000)">
+        SCROLL DOWN<i class="fas fa-chevron-circle-down fa-2x"></i>
+      </div>
+    </section>
+
+    <section class="main">
+      <div class="exhibits">
+        <div class="exhibit exhibitA">
+          <span><i class="fas fa-angle-double-right fa-2x"></i></span>
+        </div>
+        <div class="exhibit exhibitB">
+          <span><i class="fas fa-angle-double-right fa-2x"></i></span>
+        </div>
+        <div class="exhibit exhibitC">
+          <span><i class="fas fa-angle-double-right fa-2x"></i></span>
+        </div>
+        <div class="exhibit exhibitD">
+          <span><i class="fas fa-angle-double-right fa-2x"></i></span>
+        </div>
+        <div class="exhibit exhibitE">
+          <span><i class="fas fa-angle-double-right fa-2x"></i></span>
+        </div>
+        <div class="exhibit exhibitF">
+          <span><i class="fas fa-angle-double-right fa-2x"></i></span>
+        </div>
+      </div>
+    </section>
+
+    <script src="components/mainExhbits.js"></script>
+    <script src="components/top.js"></script>
+  </body>
+</html>

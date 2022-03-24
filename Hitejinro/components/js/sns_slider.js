@@ -48,5 +48,5 @@ function slideSns() {
     }
   }
 
-  setTimeout(slideSns, snsIndex === 3 ? 1000 : 5000);
+  setTimeout(slideSns, snsIndex === 3 ? 1000 : 7000);
 }
