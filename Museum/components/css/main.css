@@ -1,69 +1,105 @@
 .main {
-  margin: 5rem 0rem 5rem 0rem;
-  height: 38rem;
+  margin: 10rem auto 3rem auto;
+  height: 50rem;
   width: 100%;
-  position: relative;
 }
 .exhibits {
   height: 38rem;
-  width: 75rem;
-  margin: 0 auto;
+  width: 80rem;
   display: flex;
+  margin: 0 auto;
+  position: relative;
 }
 .exhibit {
+  position: absolute;
   display: block;
-  width: 12.5rem;
-  height: 100%;
+  width: 35rem;
+  height: 35rem;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+  transform: perspective(50rem) rotateY(-20deg);
 }
 .exhibitA {
+  z-index: 6;
   background-image: url("../img/exhibits__A.jpg");
-  background-position: -67em center;
+  left: 0;
 }
 .exhibitB {
+  z-index: 5;
   background-image: url("../img/exhibits__B.jpg");
-  left: 12.5rem;
-  background-position: -12em center;
+  left: 8rem;
+  background-position: -18rem center;
 }
 .exhibitC {
+  z-index: 4;
   background-image: url("../img/exhibits__C.jpg");
-  left: 25rem;
-  background-position: -58em center;
+  left: 16rem;
+  background-position: -30rem center;
 }
 .exhibitD {
+  z-index: 3;
   background-image: url("../img/exhibits__D.jpg");
-  left: 37.5rem;
-  background-position: -5em center;
+  left: 24rem;
+  background-position: -20rem center;
 }
 .exhibitE {
+  z-index: 2;
   background-image: url("../img/exhibits__E.jpg");
-  left: 50rem;
-  background-position: -14em center;
+  left: 32rem;
+  background-position: -30rem center;
 }
 .exhibitF {
+  z-index: 1;
   background-image: url("../img/exhibits__F.jpg");
-  right: 0;
-  background-position: -48em center;
+  left: 40rem;
+  background-position: -30rem center;
 }
 .enter {
-  z-index: 1;
-  width: 17rem;
-  transition: 0.3s ease-in-out;
+  transition: 0.7s ease-in-out;
+  animation: pop-up 0.5s both;
 }
 .click {
   background-position: center center;
-  position: absolute;
-  z-index: 2;
+  z-index: 7;
   width: 90rem;
   height: 100%;
   left: 50%;
   transform: translate(-50%, 0%);
 }
 .exhibit span {
+  pointer-events: none;
   display: none;
-  margin-top: 18rem;
+  margin-top: 15rem;
+  margin-left: 28rem;
   color: whitesmoke;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+@keyframes pop-up {
+  0% {
+    transform: perspective(50rem) rotateY(-20deg) translateY(0);
+    transform-origin: 50% 50%;
+  }
+  100% {
+    transform: perspective(50rem) rotateY(-20deg) translateY(-5rem);
+    transform-origin: 50% 50%;
+  }
+}
+.exhibit__hours,
+.exhibit__fees {
+  font-size: 1.5rem;
+  margin-top: 5rem;
+  color: whitesmoke;
 }
