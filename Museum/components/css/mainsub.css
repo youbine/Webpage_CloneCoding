@@ -1,43 +1,51 @@
 .main__sub {
   width: 100%;
-  height: 50rem;
+  height: 120vh;
 }
 .main__subwrap {
+  height: 100%;
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.selectSpeExh {
   width: 20rem;
-  height: 3rem;
+  height: 7rem;
   margin: 0 auto;
   font-size: 2rem;
-  color: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 1));
+  color: black;
   display: flex;
   justify-content: space-between;
   text-align: center;
   position: relative;
 }
-.main__subwrap span {
-  padding-top: 0.5rem;
+.selectSpeExh span {
+  line-height: 3rem;
 }
 .span__choose {
   z-index: 1;
   position: absolute;
+  line-height: 3rem;
+  width: 8rem;
   left: 5rem;
   top: 0;
   display: inline-block;
   cursor: pointer;
+  border-bottom: solid 3px black;
   animation: expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
-.main__subwrap ul {
+.selectSpeExh__options {
   cursor: pointer;
   position: absolute;
   left: 5rem;
   top: 0;
-}
-.special__exhibitions {
   display: none;
+  z-index: 90;
 }
-.special__exhibitions li {
-  width: 8rem;
+.selectSpeExh__options li {
   cursor: pointer;
   line-height: 3rem;
+  z-index: 90;
 }
 .selected {
   display: block;
@@ -50,7 +58,6 @@
   text-shadow: 0 0 2px #ccc;
   transition: 0.7s;
 }
-
 @keyframes expand {
   0% {
     letter-spacing: -1em;
@@ -62,6 +69,129 @@
   }
   100% {
     transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+.specialExhibitions {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.specialExhibitions__list {
+  display: none;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.specialExhibitions__list li {
+  float: left;
+  height: 30rem;
+  width: 20rem;
+  margin: 3rem 3rem 10rem 0;
+  perspective: 1000px;
+}
+.specialExhibitions__card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.specialExhibitions__card:after {
+  position: absolute;
+  width: 80%;
+  height: 12%;
+  left: 10%;
+  border-radius: 50%;
+  z-index: -1;
+  bottom: 0%;
+  content: "";
+  box-shadow: 0 8rem 2rem rgba(0, 0, 0, 0.24);
+}
+.specialExhibitions img {
+  height: 30rem;
+  width: 20rem;
+  animation: drop 0.7s ease-in-out;
+}
+.specialExhibitions__image,
+.specialExhibitions__info {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+.specialExhibitions__info {
+  color: black;
+  transform: rotateY(180deg);
+}
+.info__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.specialExhibitions__infoText {
+  padding-top: 10rem;
+  height: 50%;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 1.5rem;
+}
+.specialExhibitions__infoText p:first-of-type {
+  margin-top: 2rem;
+}
+.specialExhibitions__infoText span {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.specialExhibitions__theme {
+  width: 100%;
+  text-align: center;
+}
+.specialExhibitions__theme span {
+  width: 6rem;
+  line-height: 3rem;
+  display: inline-block;
+  margin: 0 1rem 0 1rem;
+  background-color: #3f0b9f;
+  border-radius: 1rem;
+}
+.flip {
+  transform: rotateY(180deg);
+}
+.bounce {
+  animation: bounce 2s both infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+    animation-timing-function: linear;
+  }
+  50% {
+    transform: translateY(-25px);
+    animation-timing-function: linear;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: linear;
+  }
+}
+@keyframes drop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(0%);
     opacity: 1;
   }
 }

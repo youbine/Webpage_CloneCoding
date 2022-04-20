@@ -24,6 +24,7 @@
   z-index: 6;
   background-image: url("../img/exhibits__A.jpg");
   left: 0;
+  background-position: -40rem center;
 }
 .exhibitB {
   z-index: 5;
