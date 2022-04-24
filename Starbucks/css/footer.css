@@ -9,32 +9,30 @@ footer {
 }
 
 .footer__menu {
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   width: 73rem;
   background: url(https://www.starbucks.co.kr/common/img/footer/footer_logo.png)
     no-repeat right top;
   height: 15rem;
 }
-
 .footer__menu ul {
+  flex-direction: column;
+  display: flex;
   width: 13rem;
-  float: left;
 }
-
 .footer__menu ul li:first-child {
   margin-bottom: 1rem;
 }
-
 .footer__menu ul li:first-child a {
   text-transform: uppercase;
   font-size: 0.9rem;
 }
-
 .footer__menu a {
   color: #fff;
   font-size: 0.7rem;
 }
-
 .footer__awards {
   background-color: #282828;
   height: 8rem;
@@ -44,11 +42,9 @@ footer {
   width: 100%;
   left: 0;
 }
-
 .footer__awards img {
   margin: -0.1rem;
 }
-
 .footer__contracts {
   margin: 0 auto;
   padding-top: 2rem;
@@ -56,25 +52,24 @@ footer {
   height: 2rem;
   font-size: 0.7rem;
 }
-
 .footer__contracts ul {
-  margin-left: 6rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-
 .footer__contracts li {
-  float: left;
   margin: auto 0.5rem;
 }
-
 .footer__contracts a {
   color: #cccccc;
 }
-
 .footer__contracts ul li:first-child a {
   color: green;
   text-decoration: underline;
 }
-
 .footer__buttons {
   height: 2rem;
   width: 23rem;
@@ -83,7 +78,6 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-
 .footer__buttons a {
   opacity: 0.9;
   display: block;
@@ -97,7 +91,6 @@ footer {
   bottom: 20%;
   background-color: none;
 }
-
 .footer__infor {
   display: flex;
   justify-content: center;
@@ -109,7 +102,6 @@ footer {
   font-size: 0.8rem;
   color: #ffffff;
 }
-
 .footer__mark {
   display: flex;
   justify-content: center;
@@ -119,4 +111,46 @@ footer {
   height: 2rem;
   font-size: 0.8rem;
   color: #ffffff;
+}
+
+@media screen and (min-width: 0px) and (max-width: 800px) {
+  footer {
+    height: auto;
+  }
+  .footer__contracts {
+    width: 100%;
+    height: 6rem;
+  }
+  .footer__menu {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer__menu ul {
+    margin-bottom: 2rem;
+    width: 11rem;
+  }
+  .footer__menu ul li:first-child a {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 960px) {
+  .footer__contracts {
+    width: 100%;
+    height: 4rem;
+  }
+  .footer__menu {
+    width: 100%;
+  }
+  .footer__menu ul {
+    width: 11rem;
+  }
+}
+@media screen and (min-width: 961px) and (max-width: 1199px) {
+  .footer__contracts {
+    width: 100%;
+  }
 }

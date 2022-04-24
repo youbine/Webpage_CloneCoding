@@ -8,7 +8,7 @@
 }
 
 .visual {
-  background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2022/2022_Spring_main_bg.jpg);
+  background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2022/2022_Summer1_main_bg.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -24,22 +24,23 @@
 }
 
 .img__title {
-  top:4rem;
+  top: 3rem;
+  left: 2rem;
   position: absolute;
   animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 .img__drink1 {
-  top: 10rem;
-  left: 15rem;
+  top: 14rem;
+  left: 14rem;
   position: absolute;
   animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation-delay: 0.5s;
 }
 
 .img__drink2 {
-  top: 2rem;
-  left: 27rem;
+  top: 6rem;
+  left: 25rem;
   position: absolute;
   animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation-delay: 1s;
@@ -55,7 +56,7 @@
 
 .visual__wrap a {
   font-size: 0.9rem;
-  line-height: 34px;
+  line-height: 2.2rem;
   text-align: center;
   width: 8rem;
   color: #e95a87;
@@ -67,4 +68,149 @@
   left: 7rem;
   animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation-delay: 2s;
+}
+.visual__wrap a:hover {
+  background-color: #e95a87;
+  color: white;
+  transition: background-color 1s, color 1s;
+}
+
+@media screen and (min-width: 0px) and (max-width: 640px) {
+  .visual {
+    height: 250vw;
+    width: auto;
+    margin-top: 4.5rem;
+  }
+  .visual__wrap {
+    margin: 0 auto;
+    width: auto;
+    height: 100%;
+  }
+  .img__title {
+    width: 45%;
+    top: 3%;
+  }
+  .img__drink1 {
+    width: 80%;
+    top: 18%;
+    left: 10%;
+  }
+  .img__drink2 {
+    width: 90%;
+    top: 38%;
+    left: 10%;
+  }
+  .img__drink3 {
+    width: 80%;
+    top: 60%;
+    right: 8%;
+  }
+  .visual__wrap a {
+    left: 50%;
+    transform: translate(-50%, 90%);
+    top: 90%;
+    width: 7rem;
+    font-size: 0.8rem;
+    line-height: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 800px) {
+  .visual {
+    height: 28rem;
+    width: 100%;
+    margin-top: 4.5rem;
+  }
+  .visual__wrap {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .img__title {
+    width: 20%;
+    top: 4rem;
+  }
+  .img__drink1 {
+    width: 35%;
+    top: 13rem;
+    left: 12%;
+  }
+  .img__drink2 {
+    width: 40%;
+    top: 7rem;
+    left: 28%;
+  }
+  .img__drink3 {
+    width: 23%;
+    top: 7rem;
+    right: 10%;
+  }
+  .visual__wrap a {
+    left: 7%;
+    top: 11rem;
+    width: 7rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 960px) {
+  .visual {
+    height: 32rem;
+    width: 100%;
+    margin-top: 4.5rem;
+  }
+  .visual__wrap {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .img__title {
+    width: 20%;
+    top: 4rem;
+  }
+  .img__drink1 {
+    width: 35%;
+    top: 13rem;
+    left: 12%;
+  }
+  .img__drink2 {
+    width: 40%;
+    top: 7rem;
+    left: 28%;
+  }
+  .img__drink3 {
+    width: 23%;
+    top: 7rem;
+    right: 10%;
+  }
+  .visual__wrap a {
+    left: 7%;
+    top: 13rem;
+    width: 7rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1199px) {
+  .img__title {
+    height: 7.8rem;
+    top: 4rem;
+  }
+  .img__drink1 {
+    width: 24rem;
+    top: 16rem;
+    left: 8rem;
+  }
+  .img__drink2 {
+    width: 28rem;
+    top: 8rem;
+    left: 18rem;
+  }
+  .img__drink3 {
+    width: 15rem;
+    top: 10rem;
+    right: 9rem;
+  }
+  .visual__wrap a {
+    top: 13rem;
+    left: 4rem;
+  }
 }

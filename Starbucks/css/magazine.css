@@ -3,30 +3,25 @@
     no-repeat 50%;
   height: 25rem;
 }
-
 .magazine__wrap {
   position: relative;
   margin: 0 auto;
   width: 62rem;
   height: 100%;
 }
-
 .magazine__text {
   position: absolute;
   top: 40%;
 }
-
 .magazine__pic {
   position: absolute;
   right: 0;
   transition: all 2s;
   opacity: 0;
 }
-
 .scrollIn.magazine__pic {
   opacity: 1;
 }
-
 .magazine__btn {
   position: absolute;
   font-size: 0.9rem;
@@ -42,9 +37,47 @@
   left: 18rem;
   transition: background-color 1s, color 1s;
 }
-
 .magazine__btn:hover {
   background-color: black;
   color: #ffffff;
   transition: background-color 1s, color 1s;
+}
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  .magazine__btn {
+    line-height: 1.8rem;
+    width: 7rem;
+    font-size: 0.8rem;
+    bottom: 2%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 930px) {
+  .magazine__btn {
+    bottom: 5%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 930px) {
+  .magazine {
+    background: none;
+    width: 100%;
+    height: auto;
+  }
+  .magazine__wrap {
+    width: 100%;
+    height: 100%;
+  }
+  .mobile__magazine {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .magazine__text,
+  .magazine__pic {
+    display: none;
+  }
 }

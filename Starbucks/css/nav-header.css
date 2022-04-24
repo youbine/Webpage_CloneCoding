@@ -1,57 +1,48 @@
-.top-wrap {
-  height: 7.5rem;
-  width: 100%;
-  display: block;
-}
-
 header {
   width: 100%;
   background-color: #f6f5ef;
   height: 7.5rem;
-  position: fixed;
   display: block;
   z-index: 99;
+  position: relative;
 }
-
 .header__wrap {
   height: 100%;
-  width: 100%;
-  position: relative;
-}
-
-.header__inner__wrap {
-  height: 100%;
-  width: 69rem;
+  max-width: 69rem;
   margin: 0 auto;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
-
-.header__inner__wrap img {
-  top: 1.2rem;
-  position: absolute;
+.logo {
+  display: block;
+  padding-top: 1.2rem;
+  height: 4.6rem;
+  width: 4.6rem;
 }
-
+.logo img {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
 .util__nav {
+  height: 3rem;
+  margin-right: 4rem;
   opacity: 0.8;
-  right: 4rem;
-  position: absolute;
   font-size: 0.8rem;
   display: flex;
-  top: 0.8rem;
   align-items: center;
+  justify-content: right;
 }
-
 .util__nav > li {
   padding: 0 1rem;
 }
-
 .sub__nav {
   position: absolute;
   width: 100%;
   height: 4rem;
   top: 3.4rem;
+  left: 0%;
 }
-
 .sub__nav__inner {
   height: 100%;
   margin: 0 auto;
@@ -65,13 +56,11 @@ header {
 .sub__nav > li {
   float: left;
 }
-
 .sub__list:first-child > a,
 .sub__list:nth-child(2) > a,
 .sub__list:nth-child(3) > a {
   padding: 0.8rem 1rem;
 }
-
 .search_btn {
   display: flex;
   justify-content: center;
@@ -80,8 +69,6 @@ header {
   border: 1px solid rgb(0, 0, 0, 0.3);
   border-radius: 4px;
 }
-
-
 .sub__list > a {
   padding: 0.8rem 2rem;
   text-align: center;
@@ -91,17 +78,205 @@ header {
   text-decoration-color: black;
   position: relative;
 }
-
 a {
   text-decoration: none;
   text-decoration-color: black;
   cursor: pointer;
 }
-
 a:visited {
   color: black;
 }
-
 a:hover {
   text-decoration: underline;
+}
+
+.mobile__nav {
+  display: none;
+  position: absolute;
+  right: 0;
+  width: 10rem;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.mobile__nav li {
+  cursor: pointer;
+}
+.mobile__nav__user {
+  width: 1.75rem;
+  height: 2rem;
+  background: url(https://www.starbucks.co.kr/common/img/common/icon_user_m.png)
+    no-repeat;
+  background-size: 100% auto;
+}
+.mobile__nav__gps {
+  width: 1.75rem;
+  height: 2.3rem;
+  background: url(https://www.starbucks.co.kr/common/img/common/icon_spot_m.png)
+    no-repeat;
+  background-size: 100% auto;
+}
+.mobile__nav__menu {
+  width: 1.75rem;
+  height: 1.6rem;
+  background: url(https://www.starbucks.co.kr/common/img/common/btn_berger_m.png)
+    no-repeat;
+  background-size: 100% auto;
+}
+
+.mobile__menu__list__wrap {
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 101;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.mobile__menu__list__wrap img {
+  position: absolute;
+  top: 3rem;
+  left: 20%;
+  width: 2rem;
+  height: 2rem;
+}
+.toggleclick {
+  display: none;
+}
+.toggleclick2 {
+  display: none;
+}
+.mobile__menu__listUL {
+  overflow-y: scroll;
+  z-index: 101;
+  width: 70%;
+  height: 100%;
+  background-color: #111;
+  right: 0;
+  position: fixed;
+  color: whitesmoke;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  padding-top: 5rem;
+}
+.mobile__menu__list {
+  width: 100%;
+  border-bottom: 1px rgba(255, 255, 255, 0.151) solid;
+}
+.mobile__menu__list > a {
+  background: url(https://www.starbucks.co.kr/common/img/common/mob_gnb_arrow_down_w.png)
+    no-repeat;
+  background-size: auto;
+  background-position: 95% center;
+  padding: 1.5rem 0 1.5rem 1rem;
+  display: inline-block;
+  width: 100%;
+}
+.mobile__menu__dropdown ul > a {
+  background: url(https://www.starbucks.co.kr/common/img/common/mob_gnb_arrow_down_w.png)
+    no-repeat;
+  background-size: auto 12%;
+  background-position: 90% center;
+  font-size: 1.3rem;
+  border-bottom: 1px rgba(255, 255, 255, 0.041) solid;
+  border-top: 1px rgba(255, 255, 255, 0.041) solid;
+  background-color: #181818;
+  color: whitesmoke;
+  padding: 1.5rem 0 1.5rem 2rem;
+  display: inline-block;
+  width: 100%;
+}
+.mobile__menu__dropdown2 {
+  width: 100%;
+  background-color: #1f201d;
+}
+.mobile__menu__dropdown2 li > a {
+  font-size: 1rem;
+  color: #ffffff;
+  opacity: 0.7;
+  padding: 1rem 0 1rem 2.5rem;
+  display: inline-block;
+  width: 100%;
+}
+@media screen and (min-width: 0px) and (max-width: 450px) {
+  .mobile__menu__listUL {
+    font-size: 0.9rem;
+  }
+  .mobile__menu__list > a {
+    background-size: auto 15%;
+    background-position: 85% center;
+  }
+  .mobile__menu__dropdown ul > a {
+    background-position: 80% center;
+    padding: 1rem 0 1rem 2rem;
+    font-size: 0.7rem;
+  }
+  .mobile__menu__dropdown2 li > a {
+    font-size: 0.6rem;
+    padding: 0.8rem 0 0.8rem 2.5rem;
+  }
+  .mobile__menu__list__wrap img {
+    position: absolute;
+    top: 3rem;
+    left: 20%;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 760px) {
+  .mobile__menu__listUL {
+    font-size: 1rem;
+  }
+  .mobile__menu__list > a {
+    background-position: 90% center;
+  }
+
+  .mobile__menu__dropdown ul > a {
+    background-position: 85% center;
+    padding: 1.2rem 0 1.2rem 2rem;
+    font-size: 0.8rem;
+  }
+  .mobile__menu__dropdown2 li > a {
+    font-size: 0.7rem;
+    padding: 0.9rem 0 0.9rem 2.5rem;
+  }
+  .mobile__menu__list__wrap img {
+    position: absolute;
+    top: 3rem;
+    left: 20%;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 960px) {
+  header {
+    height: 4.5rem;
+    position: fixed;
+  }
+  .mobile__nav {
+    display: flex;
+  }
+  .header__wrap {
+    width: 98%;
+  }
+  .logo {
+    padding-top: 0;
+    display: block;
+    position: absolute;
+    top: 0.7rem;
+    height: 3rem;
+    width: 3rem;
+  }
+  .util__nav,
+  .sub__nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1199px) {
+  .header__wrap,
+  .sub__nav__inner {
+    width: 62rem;
+  }
 }

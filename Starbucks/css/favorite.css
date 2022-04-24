@@ -5,7 +5,6 @@
   height: 50rem;
   padding: 0;
 }
-
 .favorite__wrap {
   position: relative;
   width: 70rem;
@@ -24,12 +23,9 @@
   height: 100%;
   width: 25rem;
 }
-
 .first.favorite__text {
-  background: url("https://www.starbucks.co.kr/common/img/main/fav_prod_txt01.png")
-    no-repeat;
-  width: 17rem;
-  height: 15rem;
+  width: 16rem;
+  height: 13rem;
   right: 0;
   top: 9rem;
   position: absolute;
@@ -39,11 +35,9 @@
 }
 
 .second.favorite__text {
-  background: url("https://www.starbucks.co.kr/common/img/main/fav_prod_txt02.png")
-    no-repeat;
-  width: 24rem;
-  height: 15rem;
-  right: 0;
+  width: 23rem;
+  height: 10rem;
+  right: 1rem;
   top: 25rem;
   position: absolute;
   transform: translateX(-200%);
@@ -71,9 +65,63 @@
   bottom: 10rem;
   transition: background-color 1s, color 1s;
 }
-
 .favorite__btn:hover {
   background-color: #ffffff;
   color: black;
   transition: background-color 1s, color 1s;
+}
+
+@media screen and (min-width: 0px) and (max-width: 960px) {
+  .favorite {
+    height: auto;
+    padding: 0;
+  }
+  .favorite__wrap {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .favorite__wrap > img {
+    min-width: 20rem;
+    padding-top: 5rem;
+    position: sticky;
+    height: auto;
+    width: 80%;
+  }
+  .favorite__textwrap {
+    padding-top: 20%;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .first.favorite__text {
+    min-width: 15rem;
+    width: 40%;
+    height: auto;
+    position: sticky;
+    transform: translateY(-200%);
+  }
+  .second.favorite__text {
+    min-width: 18rem;
+    padding-top: 5%;
+    position: sticky;
+    height: auto;
+    width: 50%;
+    transform: translateY(200%);
+  }
+  .favorite__btn {
+    font-size: 0.8rem;
+    margin-top: 7%;
+    position: sticky;
+    margin-bottom: 10rem;
+  }
+  .scrollIn.second.favorite__text,
+  .scrollIn.first.favorite__text {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
