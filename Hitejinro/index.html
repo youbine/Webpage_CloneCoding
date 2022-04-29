@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link
+      rel="icon"
+      href="https://www.hitejinro.com/assets/images/common/favicon.ico"
+      type="icon"
+    />
+    <link
       href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css"
       rel="stylesheet"
     />
@@ -13,475 +18,537 @@
   </head>
   <body>
     <div class="body__wrap">
-      <div class="scroll" onClick="javascript:window.scrollTo(0,0)">
-        <span>TOP</span>
+      <div class="main__wrap">
+        <header>
+          <div class="header__logo">
+            <a> <img src="components/images/logo_hitejinro.png" /> </a>
+          </div>
+          <div class="header__navs">
+            <div class="header__navs__inner">
+              <nav class="navs__menu">
+                <ul>
+                  <li class="company">
+                    <a>COMPANY</a>
+                    <div class="dropdown">
+                      <div class="dropdown__wrap">
+                        <ul>
+                          <li>인사말</li>
+                          <li>경영철학</li>
+                          <li>연혁</li>
+                        </ul>
+                        <ul>
+                          <li>Introduction</li>
+                          <li>CI</li>
+                          <li>하이트진로 폰트</li>
+                          <li>국제화</li>
+                          <li>계열사안내</li>
+                        </ul>
+                        <ul>
+                          <li>Investment</li>
+                          <li>IR정보</li>
+                          <li>전자공고</li>
+                          <li>공시</li>
+                          <li>공시정보 관리규정</li>
+                        </ul>
+                        <ul>
+                          <li>Location</li>
+                          <li>본사</li>
+                          <li>지점</li>
+                          <li>공장</li>
+                          <li>계열사</li>
+                          <li>해외법인</li>
+                        </ul>
+                        <ul>
+                          <li>factory</li>
+                          <li>공장소개</li>
+                          <li>견학신청</li>
+                          <li>신청상태</li>
+                          <li>견학후기</li>
+                          <li>견학사진</li>
+                        </ul>
+                        <ul>
+                          <li>recruit</li>
+                          <li>all about HITEJINRO</li>
+                          <li>인재상</li>
+                          <li>직무소개</li>
+                          <li>채용절차</li>
+                          <li>복리후생</li>
+                          <li>채용공고</li>
+                          <li>지원자도우미</li>
+                        </ul>
+                        <ul>
+                          <li>sports</li>
+                          <li>골프선수</li>
+                          <li>골프대회</li>
+                          <li>기타 스포츠</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="social"><a>SOCIAL & MEDIA</a></li>
+                  <li class="esg"><a>ESG</a></li>
+                  <li><a>CUSTOMER CENTER</a></li>
+                </ul>
+              </nav>
+              <nav class="navs__member">
+                <ul>
+                  <li><a>LOGIN</a></li>
+                  <li><a>JOIN</a></li>
+                  <li><a>RECRUIT</a></li>
+                </ul>
+                <div>LANGUAGE</div>
+              </nav>
+            </div>
+          </div>
+        </header>
+
+        <section class="visual">
+          <div class="visual__wrap">
+            <div class="visual__images">
+              <div class="visual__image">
+                <a
+                  ><img
+                    src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20220318_91589032.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="visual__image">
+                <a
+                  ><img
+                    src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20220307_18177302.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="visual__image">
+                <a
+                  ><img
+                    src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20220323_80644750.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="visual__image">
+                <a
+                  ><img
+                    src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20220103_88428767.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="visual__image">
+                <a
+                  ><img
+                    src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20210715_69686905.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="visual__image">
+                <a
+                  ><img
+                    src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20220302_29864856.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="visual__image">
+                <a
+                  ><img
+                    src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20210819_82269642.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="visual__image">
+                <a
+                  ><img
+                    src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20210715_46862469.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="visual__image">
+                <a
+                  ><img
+                    src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20210813_76290909.jpg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+            <button class="visual__btn Left">
+              <span></span>
+            </button>
+            <button class="visual__btn Right">
+              <span></span>
+            </button>
+            <div class="visual__dots">
+              <div class="dot"><span onclick="toggleDot(0)"></span></div>
+              <div class="dot"><span onclick="toggleDot(1)"></span></div>
+              <div class="dot"><span onclick="toggleDot(2)"></span></div>
+              <div class="dot"><span onclick="toggleDot(3)"></span></div>
+              <div class="dot"><span onclick="toggleDot(4)"></span></div>
+              <div class="dot"><span onclick="toggleDot(5)"></span></div>
+              <div class="dot"><span onclick="toggleDot(6)"></span></div>
+              <div class="dot"><span onclick="toggleDot(7)"></span></div>
+              <div class="dot"><span onclick="toggleDot(8)"></span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="service">
+          <div class="service__wrap">
+            <img
+              class="service__title"
+              src="https://www.hitejinro.com/assets/images/main/h_hotclick.png"
+            />
+            <div class="service__contents">
+              <ul>
+                <li class="content __1">
+                  <a
+                    ><img
+                      src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20210317_82433758.png"
+                      alt=""
+                  /></a>
+                  <div class="describe">
+                    <p>
+                      국내유일 청정 대나무숯으로
+                      <br />
+                      4번 걸러 더 깨끗해진
+                      <br />
+                      참이슬 fresh
+                    </p>
+                  </div>
+                </li>
+
+                <li class="content __2">
+                  <a
+                    ><img
+                      src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20220117_81705405.jpg"
+                      alt=""
+                  /></a>
+                  <div class="describe">
+                    <p>
+                      청정라거
+                      <br />
+                      시대개막
+                      <br />
+                      TERRA
+                    </p>
+                  </div>
+                </li>
+                <li class="content __3">
+                  <a
+                    ><img
+                      src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20160822_20972129.jpg"
+                      alt=""
+                  /></a>
+                  <div class="describe">
+                    <p>
+                      언론 속 하이트진로의
+                      <br />
+                      다양한 소식을 알려드립니다.
+                    </p>
+                  </div>
+                </li>
+                <li class="content __4">
+                  <a
+                    ><img
+                      src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20200923_72878366.jpg"
+                      alt=""
+                  /></a>
+                  <div class="describe">
+                    <p>
+                      15년 내공으로 만들어진
+                      <br />
+                      ALL NEW Max
+                    </p>
+                  </div>
+                </li>
+                <li class="content __5">
+                  <a
+                    ><img
+                      src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20190306_85520781.png"
+                      alt=""
+                  /></a>
+                  <div class="describe">
+                    <p>
+                      하이트진로의 사회공헌 활동은
+                      <br />
+                      모두가 즐겁고 행복한 세상을
+                      <br />
+                      만들기 위한 실천입니다.
+                    </p>
+                  </div>
+                </li>
+                <li class="content __6">
+                  <a
+                    ><img
+                      src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20201231_89601998.jpg"
+                      alt=""
+                  /></a>
+                  <div class="describe">
+                    <p>
+                      EXTRA COLD 공법으로
+                      <br />
+                      더 차갑게 돌아왔다
+                    </p>
+                  </div>
+                </li>
+                <li class="content __7">
+                  <a
+                    ><img
+                      src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20200131_37416940.jpg"
+                      alt=""
+                  /></a>
+                  <div class="describe">
+                    <p>
+                      진로 이즈 백!
+                      <br />
+                      소주의 원조, 진로가 돌아왔다
+                    </p>
+                  </div>
+                </li>
+                <li class="content __8">
+                  <a
+                    ><img
+                      src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20220426_93188153.jpg"
+                      alt=""
+                  /></a>
+                  <div class="describe">
+                    <p>하이트진로의 최신 광고영상을 소개합니다.</p>
+                  </div>
+                </li>
+                <li class="content __9">
+                  <a
+                    ><img
+                      src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20160822_99664195.jpg"
+                      alt=""
+                  /></a>
+                  <div class="describe">
+                    <p>
+                      하이트진로만의 최첨단 설비와
+                      <br />
+                      친환경이념이 담긴 생산공정을
+                      <br />
+                      직접 만나보세요.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="sns">
+          <div class="sns__wrap">
+            <img
+              class="sns__title"
+              src="https://www.hitejinro.com/assets/images/main/h_hitejinrosns.png"
+            />
+            <div class="sns__list__inner">
+              <div class="sns__list">
+                <ul>
+                  <li class="facebook">
+                    <a
+                      ><img
+                        src="https://file.hitejinro.com/hitejinro2016/upFiles/social/20220426_12080568.jpg"
+                        alt=""
+                    /></a>
+                    <div>
+                      <a>FACEBOOK</a>
+                      <p>
+                        봄바람과 함께 이슬요정님이 찾아왔어요💧<br />🌸 참이슬
+                        꽃 에디션 라벨 이쁘지은? 💗
+                      </p>
+                    </div>
+                  </li>
+                  <li class="instagram">
+                    <a
+                      ><img
+                        src="https://file.hitejinro.com/hitejinro2016/upFiles/social/20220426_62460342.jpg"
+                        alt=""
+                    /></a>
+                    <div>
+                      <a>INSTAGRAM</a>
+                      <p>
+                        두껍상회 in Busan🌊 <br />5월 15일까지 한 달 연장했으니
+                        <br />꺼비보러 어서온나🐸
+                      </p>
+                    </div>
+                  </li>
+                  <li class="blog">
+                    <a
+                      ><img
+                        src="https://file.hitejinro.com/hitejinro2016/upFiles/social/20220426_53834040.png"
+                        alt=""
+                    /></a>
+                    <div>
+                      <a>BLOG</a>
+                      <p>
+                        설레고 싶은 날엔, <br />
+                        풋풋하고 달달한 <br />
+                        캠퍼스 로맨스 웹툰 추천
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="sns__list">
+                <ul>
+                  <li class="facebook">
+                    <a
+                      ><img
+                        src="https://file.hitejinro.com/hitejinro2016/upFiles/social/20220426_22371095.jpg"
+                        alt=""
+                    /></a>
+                    <div>
+                      <a>FACEBOOK</a>
+                      <p>
+                        보기만 해도 군침 도는 <br />매콤 불닭쌈과 테라의 환상
+                        조합!
+                      </p>
+                    </div>
+                  </li>
+                  <li class="instagram">
+                    <a
+                      ><img
+                        src="https://file.hitejinro.com/hitejinro2016/upFiles/social/20220426_47208335.jpg"
+                        alt=""
+                    /></a>
+                    <div>
+                      <a>INSTAGRAM</a>
+                      <p>
+                        4월 22일은 지구의 날🌏 <br />8시부터 10분간 불 끄고 저
+                        밤하늘에 건배
+                      </p>
+                    </div>
+                  </li>
+                  <li class="blog">
+                    <a
+                      ><img
+                        src="https://file.hitejinro.com/hitejinro2016/upFiles/social/20220426_88407066.png"
+                        alt=""
+                    /></a>
+                    <div>
+                      <a>BLOG</a>
+                      <p>
+                        핑크빛 봄이 왔나 봄♡ <br />봄맞이 꺼비커플 촬영
+                        비하인드컷 모음!
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="sns__list">
+                <ul>
+                  <li class="facebook">
+                    <a
+                      ><img
+                        src="https://file.hitejinro.com/hitejinro2016/upFiles/social/20220408_13708172.jpg"
+                        alt=""
+                    /></a>
+                    <div>
+                      <a>FACEBOOK</a>
+                      <p>
+                        🐸 : 여기가 진로 맞냐껍? <br />
+                        💧 : 😮😲🙄😳🤔😱
+                      </p>
+                    </div>
+                  </li>
+                  <li class="instagram">
+                    <a
+                      ><img
+                        src="https://file.hitejinro.com/hitejinro2016/upFiles/social/20220418_63100533.jpg"
+                        alt=""
+                    /></a>
+                    <div>
+                      <a>INSTAGRAM</a>
+                      <p>
+                        벚꽃보다 아름다운 요정님과의 만남을 이슬이는 기억할
+                        거예요🌸
+                      </p>
+                    </div>
+                  </li>
+                  <li class="blog">
+                    <a
+                      ><img
+                        src="https://file.hitejinro.com/hitejinro2016/upFiles/social/20220418_45359648.png"
+                        alt=""
+                    /></a>
+                    <div>
+                      <a>BLOG</a>
+                      <p>
+                        참이슬과 떠나는 세계여행 3탄! <br />
+                        이탈리아 오징어 먹물 리소토 레시피
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="sns__dots">
+              <div class="sns__dot" onclick="snsToggleDot(0)"></div>
+              <div class="sns__dot" onclick="snsToggleDot(1)"></div>
+              <div class="sns__dot" onclick="snsToggleDot(2)"></div>
+            </div>
+          </div>
+        </section>
+        <div class="scroll" onClick="javascript:window.scrollTo(0,0)">
+          <span>TOP</span>
+        </div>
       </div>
-      <header>
-        <div class="header__logo">
-          <a href=""> <img src="components/images/logo_hitejinro.png" /> </a>
-        </div>
-        <div class="header__navs">
-          <div class="header__navs__inner">
-            <nav class="navs__menu">
-              <ul>
-                <li><a href="">COMPANY</a><span></span></li>
-                <li><a href="">SOCIAL & MEDIA</a><span></span></li>
-                <li><a href="">ESG</a><span></span></li>
-                <li><a href="">CUSTOMER CENTER</a><span></span></li>
-              </ul>
-            </nav>
-            <nav class="navs__member">
-              <ul>
-                <li><a href="">LOGIN</a></li>
-                <li><a href="">JOIN</a></li>
-                <li><a href="">RECRUIT</a></li>
-              </ul>
-              <div>LANGUAGE</div>
-            </nav>
-          </div>
-        </div>
-      </header>
-
-      <section class="visual">
-        <div class="visual__wrap">
-          <div class="visual__images">
-            <div class="visual__image">
-              <a href=""
-                ><img
-                  src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20220117_32774199.jpg"
-                  alt=""
-              /></a>
-            </div>
-            <div class="visual__image">
-              <a href=""
-                ><img
-                  src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20220307_18177302.jpg"
-                  alt=""
-              /></a>
-            </div>
-            <div class="visual__image">
-              <a href=""
-                ><img
-                  src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20220117_37125327.jpg"
-                  alt=""
-              /></a>
-            </div>
-            <div class="visual__image">
-              <a href=""
-                ><img
-                  src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20220103_88428767.jpg"
-                  alt=""
-              /></a>
-            </div>
-            <div class="visual__image">
-              <a href=""
-                ><img
-                  src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20210715_69686905.jpg"
-                  alt=""
-              /></a>
-            </div>
-            <div class="visual__image">
-              <a href=""
-                ><img
-                  src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20220302_29864856.jpg"
-                  alt=""
-              /></a>
-            </div>
-            <div class="visual__image">
-              <a href=""
-                ><img
-                  src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20210819_82269642.jpg"
-                  alt=""
-              /></a>
-            </div>
-            <div class="visual__image">
-              <a href=""
-                ><img
-                  src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20210715_46862469.jpg"
-                  alt=""
-              /></a>
-            </div>
-            <div class="visual__image">
-              <a href=""
-                ><img
-                  src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20210813_76290909.jpg"
-                  alt=""
-              /></a>
-            </div>
-          </div>
-          <button class="visual__btn Left">
-            <span></span>
-          </button>
-          <button class="visual__btn Right">
-            <span></span>
-          </button>
-          <div class="visual__dots">
-            <div class="dot"><span onclick="toggleDot(0)"></span></div>
-            <div class="dot"><span onclick="toggleDot(1)"></span></div>
-            <div class="dot"><span onclick="toggleDot(2)"></span></div>
-            <div class="dot"><span onclick="toggleDot(3)"></span></div>
-            <div class="dot"><span onclick="toggleDot(4)"></span></div>
-            <div class="dot"><span onclick="toggleDot(5)"></span></div>
-            <div class="dot"><span onclick="toggleDot(6)"></span></div>
-            <div class="dot"><span onclick="toggleDot(7)"></span></div>
-            <div class="dot"><span onclick="toggleDot(8)"></span></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="service">
-        <div class="service__wrap">
-          <img
-            class="service__title"
-            src="https://www.hitejinro.com/assets/images/main/h_hotclick.png"
-          />
-          <div class="service__contents">
-            <ul>
-              <li class="content __1">
-                <a href=""
-                  ><img
-                    src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20210317_82433758.png"
-                    alt=""
-                /></a>
-                <div class="describe">
-                  <p>
-                    국내유일 청정 대나무숯으로
-                    <br />
-                    4번 걸러 더 깨끗해진
-                    <br />
-                    참이슬 fresh
-                  </p>
-                </div>
-              </li>
-
-              <li class="content __2">
-                <a href=""
-                  ><img
-                    src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20220117_81705405.jpg"
-                    alt=""
-                /></a>
-                <div class="describe">
-                  <p>
-                    청정라거
-                    <br />
-                    시대개막
-                    <br />
-                    TERRA
-                  </p>
-                </div>
-              </li>
-              <li class="content __3">
-                <a href=""
-                  ><img
-                    src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20160822_20972129.jpg"
-                    alt=""
-                /></a>
-                <div class="describe">
-                  <p>
-                    언론 속 하이트진로의
-                    <br />
-                    다양한 소식을 알려드립니다.
-                  </p>
-                </div>
-              </li>
-              <li class="content __4">
-                <a href=""
-                  ><img
-                    src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20200923_72878366.jpg"
-                    alt=""
-                /></a>
-                <div class="describe">
-                  <p>
-                    15년 내공으로 만들어진
-                    <br />
-                    ALL NEW Max
-                  </p>
-                </div>
-              </li>
-              <li class="content __5">
-                <a href=""
-                  ><img
-                    src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20190306_85520781.png"
-                    alt=""
-                /></a>
-                <div class="describe">
-                  <p>
-                    하이트진로의 사회공헌 활동은
-                    <br />
-                    모두가 즐겁고 행복한 세상을
-                    <br />
-                    만들기 위한 실천입니다.
-                  </p>
-                </div>
-              </li>
-              <li class="content __6">
-                <a href=""
-                  ><img
-                    src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20201231_89601998.jpg"
-                    alt=""
-                /></a>
-                <div class="describe">
-                  <p>
-                    EXTRA COLD 공법으로
-                    <br />
-                    더 차갑게 돌아왔다
-                  </p>
-                </div>
-              </li>
-              <li class="content __7">
-                <a href=""
-                  ><img
-                    src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20200131_37416940.jpg"
-                    alt=""
-                /></a>
-                <div class="describe">
-                  <p>
-                    진로 이즈 백!
-                    <br />
-                    소주의 원조, 진로가 돌아왔다
-                  </p>
-                </div>
-              </li>
-              <li class="content __8">
-                <a href=""
-                  ><img
-                    src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20220112_63473526.png"
-                    alt=""
-                /></a>
-                <div class="describe">
-                  <p>하이트진로의 최신 광고영상을 소개합니다.</p>
-                </div>
-              </li>
-              <li class="content __9">
-                <a href=""
-                  ><img
-                    src="https://file.hitejinro.com/hitejinro2016/upFiles/main/20160822_99664195.jpg"
-                    alt=""
-                /></a>
-                <div class="describe">
-                  <p>
-                    하이트진로만의 최첨단 설비와
-                    <br />
-                    친환경이념이 담긴 생산공정을
-                    <br />
-                    직접 만나보세요.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="sns">
-        <div class="sns__wrap">
-          <img
-            class="sns__title"
-            src="https://www.hitejinro.com/assets/images/main/h_hitejinrosns.png"
-          />
-          <div class="sns__list__inner">
-            <div class="sns__list">
-              <ul>
-                <li class="facebook">
-                  <a href=""
-                    ><img
-                      src="https://file.hitejinro.com/hitejinro2016/upFiles/social/20220303_41670412.jpg"
-                      alt=""
-                  /></a>
-                  <div>
-                    <a href="">FACEBOOK</a>
-                    <a href="">수납력은 떨어져도 술납력만 있으면 돼</a>
-                  </div>
-                </li>
-                <li class="instagram">
-                  <a href=""
-                    ><img
-                      src="https://file.hitejinro.com/hitejinro2016/upFiles/social/20220310_44213543.jpg"
-                      alt=""
-                  /></a>
-                  <div>
-                    <a href="">INSTAGRAM</a>
-                    <a href=""
-                      >벌써부터 봄내음 풀풀~🌼
-                      <br />
-                      꺼비는 봄 마시러 갈 준비 됐껍!🐸
-                    </a>
-                  </div>
-                </li>
-                <li class="blog">
-                  <a href=""
-                    ><img
-                      src="https://file.hitejinro.com/hitejinro2016/upFiles/social/20220310_18345488.png"
-                      alt=""
-                  /></a>
-                  <div>
-                    <a href="">BLOG</a>
-                    <a href="">
-                      껍딱지들 보러가는ing♥ <br />
-                      꺼비 출근길 직찍 모음!
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <div class="sns__list">
-              <ul>
-                <li class="facebook">
-                  <a href=""
-                    ><img
-                      src="https://file.hitejinro.com/hitejinro2016/upFiles/social/20220303_49085505.jpg"
-                      alt=""
-                  /></a>
-                  <div>
-                    <a href="">FACEBOOK</a>
-                    <a href=""
-                      >쇄도하는 앵콜에 힘입어 나,
-                      <br />
-                      아이셔에이슬이 다시 돌아왔셔!</a
-                    >
-                  </div>
-                </li>
-                <li class="instagram">
-                  <a href=""
-                    ><img
-                      src="https://file.hitejinro.com/hitejinro2016/upFiles/social/20220310_11628908.jpg"
-                      alt=""
-                  /></a>
-                  <div>
-                    <a href="">INSTAGRAM</a>
-                    <a href=""
-                      >전국은 지금 #테라스푸너챌린지 열풍 😲🥄
-                      <br />
-                      테라 스푸너를 찾아 뻥!뻥! 100%</a
-                    >
-                  </div>
-                </li>
-                <li class="blog">
-                  <a href=""
-                    ><img
-                      src="https://file.hitejinro.com/hitejinro2016/upFiles/social/20220303_97101185.png"
-                      alt=""
-                  /></a>
-                  <div>
-                    <a href="">BLOG</a>
-                    <a href="">
-                      필라이트처럼 가볍게! <br />
-                      홈맥하고 싶은 밤, 유튜브 플레이리스트 추천
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <div class="sns__list">
-              <ul>
-                <li class="facebook">
-                  <a href=""
-                    ><img
-                      src="https://file.hitejinro.com/hitejinro2016/upFiles/social/20220303_64237144.jpg"
-                      alt=""
-                  /></a>
-                  <div>
-                    <a href="">FACEBOOK</a>
-                    <a href="">K-하이틴 감성으로 비어퐁 말고 소주퐁 어때?</a>
-                  </div>
-                </li>
-                <li class="instagram">
-                  <a href=""
-                    ><img
-                      src="https://file.hitejinro.com/hitejinro2016/upFiles/social/20220310_55349069.jpg"
-                      alt=""
-                  /></a>
-                  <div>
-                    <a href="">INSTAGRAM</a>
-                    <a href=""
-                      >설레는 첫 발걸음을 내딛은 여러분의 시작을 응원해요!
-                      🌱👍</a
-                    >
-                  </div>
-                </li>
-                <li class="blog">
-                  <a href=""
-                    ><img
-                      src="https://file.hitejinro.com/hitejinro2016/upFiles/social/20220303_63657988.png"
-                      alt=""
-                  /></a>
-                  <div>
-                    <a href="">BLOG</a>
-                    <a href="">
-                      내 방 안에 테라-청정세계! <br />
-                      살아있는 식물 액자 만들기
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="sns__dots">
-            <div class="sns__dot" onclick="snsToggleDot(0)"></div>
-            <div class="sns__dot" onclick="snsToggleDot(1)"></div>
-            <div class="sns__dot" onclick="snsToggleDot(2)"></div>
-          </div>
-        </div>
-      </section>
-
       <footer>
         <div class="footer__wrap">
           <div class="footer__menu">
             <ul>
               <li class="menu__list">
-                <a href="">COMPANY</a>
+                <a>COMPANY</a>
                 <ul>
-                  <li><a href="">인사말</a></li>
-                  <li><a href="">경영철학</a></li>
-                  <li><a href="">연혁</a></li>
-                  <li><a href="">Introduction</a></li>
-                  <li><a href="">Investment</a></li>
+                  <li><a>인사말</a></li>
+                  <li><a>경영철학</a></li>
+                  <li><a>연혁</a></li>
+                  <li><a>Introduction</a></li>
+                  <li><a>Investment</a></li>
                 </ul>
                 <ul>
-                  <li><a href="">Location</a></li>
-                  <li><a href="">Factory</a></li>
-                  <li><a href="">Recruit</a></li>
-                  <li><a href="">Sports</a></li>
-                </ul>
-              </li>
-              <li class="menu__list">
-                <a href="">SOCIAL & MEDIA</a>
-                <ul>
-                  <li><a href="">Social board</a></li>
-                  <li><a href="">Media</a></li>
-                  <li><a href="">마케팅 성공사례</a></li>
+                  <li><a>Location</a></li>
+                  <li><a>Factory</a></li>
+                  <li><a>Recruit</a></li>
+                  <li><a>Sports</a></li>
                 </ul>
               </li>
               <li class="menu__list">
-                <a href="">ESG</a>
+                <a>SOCIAL & MEDIA</a>
                 <ul>
-                  <li><a href="">식품안전경영</a></li>
-                  <li><a href="">지속가능환경경영</a></li>
-                  <li><a href="">CSR</a></li>
-                  <li><a href="">Ethical Menagement</a></li>
+                  <li><a>Social board</a></li>
+                  <li><a>Media</a></li>
+                  <li><a>마케팅 성공사례</a></li>
                 </ul>
               </li>
               <li class="menu__list">
-                <a href="">CUSTOMER CENTER</a>
+                <a>ESG</a>
                 <ul>
-                  <li><a href="">FAQ</a></li>
-                  <li><a href="">Q&A</a></li>
-                  <li><a href="">주류상식 가이드</a></li>
-                  <li><a href="">기타</a></li>
+                  <li><a>식품안전경영</a></li>
+                  <li><a>지속가능환경경영</a></li>
+                  <li><a>CSR</a></li>
+                  <li><a>Ethical Menagement</a></li>
                 </ul>
               </li>
               <li class="menu__list">
-                <a href="">BRAND</a>
+                <a>CUSTOMER CENTER</a>
                 <ul>
-                  <li><a href="">맥주</a></li>
-                  <li><a href="">소주</a></li>
-                  <li><a href="">위스키</a></li>
-                  <li><a href="">와인</a></li>
-                  <li><a href="">사케</a></li>
-                  <li><a href="">기타 주류</a></li>
-                  <li><a href="">인터내셔널</a></li>
+                  <li><a>FAQ</a></li>
+                  <li><a>Q&A</a></li>
+                  <li><a>주류상식 가이드</a></li>
+                  <li><a>기타</a></li>
+                </ul>
+              </li>
+              <li class="menu__list">
+                <a>BRAND</a>
+                <ul>
+                  <li><a>맥주</a></li>
+                  <li><a>소주</a></li>
+                  <li><a>위스키</a></li>
+                  <li><a>와인</a></li>
+                  <li><a>사케</a></li>
+                  <li><a>기타 주류</a></li>
+                  <li><a>인터내셔널</a></li>
                 </ul>
               </li>
             </ul>
@@ -496,15 +563,15 @@
         </div>
         <div class="footer__policy">
           <ul>
-            <li><a href="">개인정보처리방침</a></li>
-            <li><a href="">회원이용약관</a></li>
-            <li><a href="">이메일무단수집거부</a></li>
-            <li><a href="">동반성장</a></li>
-            <li><a href="">청움고(부정제보)</a></li>
-            <li><a href="">공시정보 관리규정</a></li>
-            <li><a href="">공정거래자율준수</a></li>
-            <li><a href="">하이트진로 SNS</a></li>
-            <li><a href="">패밀리 사이트</a></li>
+            <li><a>개인정보처리방침</a></li>
+            <li><a>회원이용약관</a></li>
+            <li><a>이메일무단수집거부</a></li>
+            <li><a>동반성장</a></li>
+            <li><a>청움고(부정제보)</a></li>
+            <li><a>공시정보 관리규정</a></li>
+            <li><a>공정거래자율준수</a></li>
+            <li><a>하이트진로 SNS</a></li>
+            <li><a>패밀리 사이트</a></li>
           </ul>
         </div>
       </footer>

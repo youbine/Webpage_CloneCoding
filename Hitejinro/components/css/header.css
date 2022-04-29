@@ -14,16 +14,15 @@
   margin-top: 0.5rem;
 }
 .header__navs {
+  position: relative;
   display: block;
   background-color: #ffffff;
   height: 6rem;
   width: 100%;
 }
 .header__navs__inner {
-  height: 100%;
   width: 67rem;
   margin: 0 auto;
-  position: relative;
 }
 .header__navs__inner li {
   float: left;
@@ -32,35 +31,46 @@
   height: 6rem;
   width: 50rem;
 }
-.navs__menu li {
-  position: relative;
-}
 .navs__menu a {
+  cursor: pointer;
   padding-top: 3.5rem;
   height: 2.5rem;
   color: black;
   display: inline-block;
   text-indent: -200000rem;
 }
-.navs__menu li:first-child {
+.navs__menu a::after {
+  content: "";
+  background-color: #0a3ef7;
+  display: block;
+  opacity: 0;
+  margin-top: -1rem;
+  width: 100%;
+  height: 0.2rem;
+  transition: opacity 0.4s ease;
+}
+.navs__menu a:hover::after {
+  opacity: 0.7;
+}
+.navs__menu .company {
   margin: 0 6.5rem 0 0;
 }
-.navs__menu li:first-child a {
+.navs__menu .company a {
   background: url(https://www.hitejinro.com/assets/images/common/gnb_official_menu_4.jpg)
     no-repeat;
   background-position: 0 2.5rem;
   width: 4.5rem;
 }
-.navs__menu li:nth-child(2) a {
+.navs__menu .social a {
   background: url(https://www.hitejinro.com/assets/images/common/gnb_official_menu_4.jpg)
     no-repeat 100%;
   background-position: -12.5rem 2.5rem;
   width: 8rem;
 }
-.navs__menu li:nth-child(3) {
+.navs__menu .esg {
   margin: 0 6.5rem 0 6.5rem;
 }
-.navs__menu li:nth-child(3) a {
+.navs__menu .esg a {
   background: url(https://www.hitejinro.com/assets/images/common/gnb_official_menu_4.jpg)
     no-repeat 100%;
   background-position: -28rem 2.5rem;
@@ -72,16 +82,7 @@
   background-position: -38.5rem 2.5rem;
   width: 9rem;
 }
-.bottom_line {
-  position: absolute;
-  left: 0;
-  bottom: 2.3rem;
-  background-color: #0a3ef7;
-  opacity: 0.7;
-  width: 100%;
-  height: 0.2rem;
-  transition: 0.4s ease;
-}
+
 .navs__member {
   float: right;
   font-weight: 700;
@@ -89,7 +90,7 @@
   color: #696969b4;
   height: 100%;
   width: 15rem;
-  right: 0;
+  right: 10rem;
   top: 0;
   margin-top: 2.5rem;
   position: absolute;

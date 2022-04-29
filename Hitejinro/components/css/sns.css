@@ -41,15 +41,21 @@
   word-break: keep-all;
 }
 .sns__list div a {
+  cursor: pointer;
   color: black;
-  line-height: 1.1rem;
+  line-height: 1.2rem;
 }
 .sns__list div a:first-child {
   font-size: 0.9rem;
   font-weight: bolder;
   margin-bottom: 0.8rem;
 }
+.sns__list div p {
+  cursor: pointer;
+  line-height: 1.2rem;
+}
 .sns__list img {
+  cursor: pointer;
   height: 6.25rem;
   width: 6.25rem;
   border-radius: 3rem;

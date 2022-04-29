@@ -116,8 +116,18 @@
     margin-left: -35%;
   }
 }
-@media screen and (min-width: 1700px) and (max-width: 1800px) {
+@media screen and (min-width: 1700px) and (max-width: 1900px) {
   .visual__images {
     margin-left: -25%;
+  }
+}
+@media screen and (min-width: 1900px) and (max-width: 2000px) {
+  .visual__images {
+    margin-left: -15%;
+  }
+}
+@media screen and (min-width: 2000px) and (max-width: 2300px) {
+  .visual__images {
+    margin-left: -5%;
   }
 }

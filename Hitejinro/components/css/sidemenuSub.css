@@ -175,6 +175,7 @@
     no-repeat;
   height: 6rem;
   width: 100%;
+  padding-bottom: 3rem;
 }
 .liquor.__wine li:hover {
   background-position: -6.2rem 0;
@@ -263,6 +264,7 @@
     no-repeat;
   height: 6rem;
   width: 100%;
+  padding-bottom: 3rem;
 }
 .liquor.__another li:hover {
   background-position: -6.2rem 0;

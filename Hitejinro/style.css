@@ -17,7 +17,12 @@ body {
 .body__wrap {
   padding-right: 6.25rem;
 }
+.main__wrap {
+  width: 100%;
+  height: 100%;
+}
 .scroll {
+  position: relative;
   cursor: pointer;
   opacity: 0;
   transition: 0.3s ease-in;
@@ -25,7 +30,7 @@ body {
 .scroll span {
   position: fixed;
   bottom: 0;
-  right: 15rem;
+  right: 16%;
   width: 3rem;
   height: 3rem;
   text-align: right;
@@ -35,4 +40,80 @@ body {
   background: url(https://www.hitejinro.com/assets/images/common/icon_top.png)
     no-repeat 0 0;
   z-index: 300;
+}
+
+.dropdown {
+  display: none;
+  z-index: 10;
+  position: absolute;
+  bottom: -17rem;
+  left: 0;
+  width: 100%;
+  height: 17rem;
+  background: #1253fa;
+  color: whitesmoke;
+}
+.header__navs__inner li:hover .dropdown {
+  display: block;
+}
+.dropdown__wrap {
+  overflow: hidden;
+  float: none;
+  margin: 0 auto;
+  display: flex;
+  width: 67rem;
+  height: 100%;
+}
+.dropdown__wrap ul {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  float: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.185);
+  padding: 1rem;
+}
+
+.dropdown__wrap ul li {
+  cursor: pointer;
+  line-height: 1.3rem;
+  letter-spacing: 0.06rem;
+  font-size: 0.8rem;
+  color: #c0d2fc;
+}
+
+.dropdown__wrap ul:first-child li,
+.dropdown__wrap ul li:first-child {
+  float: none;
+  color: #fff;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.dropdown__wrap ul:first-child li {
+  flex: 1;
+}
+.dropdown__wrap ul:first-child li::before,
+.dropdown__wrap ul li:first-child::before {
+  content: "";
+  padding-top: 0.5rem;
+  display: block;
+  width: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.788);
+}
+.dropdown__wrap ul:first-child {
+  display: flex;
+  flex-direction: column;
+}
+.dropdown__wrap ul li:hover {
+  color: #31ffe9;
+}
+.dropdown__wrap ul:not(.dropdown__wrap ul:first-child):hover {
+  background: rgba(1, 27, 245, 0.4);
+}
+
+.dropdown__wrap ul:first-child li:hover {
+  background: rgba(1, 27, 245, 0.4);
 }
