@@ -1,20 +1,3 @@
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .visual {
   background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2022/2022_Summer1_main_bg.jpg);
   background-position: center;
@@ -90,6 +73,23 @@
   background-color: #e95a87;
   color: white;
   transition: background-color 1s, color 1s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media (min-width: 0px) and (max-width: 640px) {
