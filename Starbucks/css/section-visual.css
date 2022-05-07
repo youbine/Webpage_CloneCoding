@@ -6,6 +6,14 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 .visual {
   background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2022/2022_Summer1_main_bg.jpg);
@@ -28,6 +36,7 @@
   left: 2rem;
   position: absolute;
   animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 .img__drink1 {
@@ -36,6 +45,8 @@
   position: absolute;
   animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation-delay: 0.5s;
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 0.5s;
 }
 
 .img__drink2 {
@@ -44,6 +55,8 @@
   position: absolute;
   animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation-delay: 1s;
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 1s;
 }
 
 .img__drink3 {
@@ -52,6 +65,8 @@
   position: absolute;
   animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation-delay: 1.5s;
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 1.5s;
 }
 
 .visual__wrap a {
@@ -68,6 +83,8 @@
   left: 7rem;
   animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation-delay: 2s;
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 2s;
 }
 .visual__wrap a:hover {
   background-color: #e95a87;
@@ -75,7 +92,7 @@
   transition: background-color 1s, color 1s;
 }
 
-@media screen and (min-width: 0px) and (max-width: 640px) {
+@media (min-width: 0px) and (max-width: 640px) {
   .visual {
     height: 250vw;
     width: auto;
@@ -88,20 +105,24 @@
   }
   .img__title {
     width: 45%;
+    height: auto;
     top: 3%;
   }
   .img__drink1 {
     width: 80%;
     top: 18%;
     left: 10%;
+    max-width: 32rem;
   }
   .img__drink2 {
     width: 90%;
     top: 38%;
     left: 10%;
+    max-width: 32rem;
   }
   .img__drink3 {
     width: 80%;
+    height: fit-content;
     top: 60%;
     right: 8%;
   }
@@ -115,7 +136,7 @@
   }
 }
 
-@media screen and (min-width: 640px) and (max-width: 800px) {
+@media (min-width: 640px) and (max-width: 800px) {
   .visual {
     height: 28rem;
     width: 100%;
@@ -152,7 +173,7 @@
   }
 }
 
-@media screen and (min-width: 800px) and (max-width: 960px) {
+@media (min-width: 800px) and (max-width: 960px) {
   .visual {
     height: 32rem;
     width: 100%;
@@ -189,7 +210,7 @@
   }
 }
 
-@media screen and (min-width: 961px) and (max-width: 1199px) {
+@media (min-width: 960px) and (max-width: 1199px) {
   .img__title {
     height: 7.8rem;
     top: 4rem;

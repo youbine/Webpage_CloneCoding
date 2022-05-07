@@ -110,7 +110,7 @@
   }
 }
 
-@media screen and (min-width: 0px) and (max-width: 800px) {
+@media (min-width: 0px) and (max-width: 800px) {
   .notice {
     height: 7.6rem;
     flex-direction: row;
@@ -135,7 +135,7 @@
   }
 }
 
-@media screen and (min-width: 800px) and (max-width: 960px) {
+@media (min-width: 800px) and (max-width: 960px) {
   .notice__right a {
     left: 10%;
     width: 13rem;
@@ -145,7 +145,7 @@
     margin: 0 0 0 10%;
   }
 }
-@media screen and (min-width: 1000px) and (max-width: 1299px) {
+@media (min-width: 960px) and (max-width: 1299px) {
   .notice__right a {
     left: 10%;
   }
