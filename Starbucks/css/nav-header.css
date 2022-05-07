@@ -4,7 +4,7 @@ header {
   height: 7.5rem;
   display: block;
   z-index: 99;
-  position: relative;
+  position: fixed;
 }
 .header__wrap {
   height: 100%;
@@ -197,7 +197,7 @@ a:hover {
   display: inline-block;
   width: 100%;
 }
-@media screen and (min-width: 0px) and (max-width: 450px) {
+@media (min-width: 0px) and (max-width: 450px) {
   .mobile__menu__listUL {
     font-size: 0.9rem;
   }
@@ -223,7 +223,7 @@ a:hover {
   }
 }
 
-@media screen and (min-width: 450px) and (max-width: 760px) {
+@media (min-width: 450px) and (max-width: 760px) {
   .mobile__menu__listUL {
     font-size: 1rem;
   }
@@ -249,7 +249,7 @@ a:hover {
   }
 }
 
-@media screen and (min-width: 0px) and (max-width: 960px) {
+@media (min-width: 0px) and (max-width: 960px) {
   header {
     height: 4.5rem;
     position: fixed;
@@ -274,9 +274,9 @@ a:hover {
   }
 }
 
-@media screen and (min-width: 960px) and (max-width: 1199px) {
+@media (min-width: 960px) and (max-width: 1199px) {
   .header__wrap,
   .sub__nav__inner {
-    width: 62rem;
+    width: 100%;
   }
 }

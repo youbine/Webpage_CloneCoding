@@ -13,21 +13,27 @@
 .reserve::after {
   content: url(https://image.istarbucks.co.kr/upload/common/img/main/2022/reserve_2022_indonesia_leaf2.png);
   position: absolute;
-  right: -15rem;
+  right: -20rem;
   bottom: -0.2rem;
 }
 .reserve__wrap {
+  position: relative;
   max-width: 1080px;
+  width: 80%;
   margin: 0 auto;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-.reserve__wrap img {
+.reserve__pc {
   margin-top: 6rem;
   margin-right: auto;
-  width: 30rem;
+  max-width: 35rem;
+  width: 60%;
   z-index: 50;
+}
+.reserve__m {
+  display: none;
 }
 .reserve__btn {
   font-size: 0.9rem;
@@ -38,7 +44,7 @@
   color: #b9813e;
   width: 8rem;
   margin-top: 2rem;
-  margin-left: 15.5rem;
+  margin-left: 28%;
   display: block;
   z-index: 50;
   transition: background-color 1s, color 1s;
@@ -52,23 +58,23 @@
   height: 100%;
   width: 100%;
   position: absolute;
+  left: -30%;
   top: 0;
-  overflow: hidden;
 }
 .reserve__drink img {
   width: auto;
   height: 100%;
-  right: -6rem;
-  position: absolute;
-  max-width: auto;
 }
 
-@media screen and (min-width: 0px) and (max-width: 930px) {
+@media (min-width: 0px) and (max-width: 930px) {
   .reserve {
     background: none;
     height: auto;
     width: 100%;
     position: relative;
+  }
+  .reserve__wrap {
+    width: 100%;
   }
   .reserve__btn {
     font-size: 0.8rem;
@@ -84,12 +90,14 @@
     background-color: white;
     color: black;
   }
+  .reserve__pc,
   .reserve__drink img,
   .reserve::before,
   .reserve::after {
     display: none;
   }
-  .reserve__wrap img {
+  .reserve__m {
+    display: block;
     height: 100%;
     width: 100%;
     max-width: none;
@@ -97,39 +105,74 @@
     object-fit: cover;
   }
 }
-@media screen and (min-width: 930px) and (max-width: 1200px) {
-  .reserve__drink img {
-    right: -34rem;
+@media (min-width: 930px) and (max-width: 1000px) {
+  .reserve__pc {
+    width: 50%;
+  }
+  .reserve__btn {
+    font-size: 0.8rem;
+    line-height: 2rem;
+    width: 7rem;
+    margin-left: 25%;
+  }
+  .reserve__drink {
+    left: -70%;
+  }
+  .reserve::before {
+    left: -25rem;
+  }
+  .reserve::after {
+    right: -40rem;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1100px) {
+  .reserve__pc {
+    width: 50%;
+  }
+  .reserve__btn {
+    font-size: 0.8rem;
+    line-height: 2rem;
+    width: 7rem;
+    margin-left: 25%;
+  }
+  .reserve__drink {
+    left: -55%;
+  }
+  .reserve::before {
+    left: -25rem;
+  }
+  .reserve::after {
+    right: -40rem;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .reserve__pc {
+    width: 50%;
+  }
+  .reserve__btn {
+    font-size: 0.8rem;
+    line-height: 2rem;
+    width: 7rem;
+    margin-left: 27%;
+  }
+  .reserve__drink {
+    left: -40%;
   }
   .reserve::before {
     left: -22rem;
   }
   .reserve::after {
-    right: -30rem;
-  }
-  .reserve__wrap img {
-    width: 25rem;
-    margin-left: 3rem;
+    right: -40rem;
   }
 }
-@media screen and (min-width: 1200px) and (max-width: 1400px) {
-  .reserve__drink img {
-    right: -30rem;
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .reserve__drink {
+    left: -35%;
   }
   .reserve::before {
     left: -15rem;
   }
   .reserve::after {
-    right: -25rem;
-  }
-}
-@media screen and (min-width: 1400px) and (max-width: 1700px) {
-  .reserve__drink img {
-    right: -20rem;
-  }
-}
-@media screen and (min-width: 1700px) and (max-width: 1800px) {
-  .reserve__drink img {
-    right: -13rem;
+    right: -28rem;
   }
 }

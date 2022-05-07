@@ -4,75 +4,96 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 40rem;
+  height: 100vh;
+  margin-top: 7.5rem;
 }
-
 .visual__wrap {
   margin: 0 auto;
   position: relative;
   box-sizing: border-box;
   width: 69rem;
+  height: 100%;
 }
-
+.visual__text {
+  top: 6%;
+  left: 2%;
+  width: 25%;
+  height: 40%;
+  position: relative;
+}
 .img__title {
-  top: 3rem;
-  left: 2rem;
-  position: absolute;
-  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  width: 100%;
+  height: auto;
+  animation: fade-in 1.2s;
+  -webkit-animation: fade-in 1.2s;
 }
-
-.img__drink1 {
-  top: 14rem;
-  left: 14rem;
-  position: absolute;
-  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation-delay: 0.5s;
-  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  -webkit-animation-delay: 0.5s;
+.visual__text div {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
 }
-
-.img__drink2 {
-  top: 6rem;
-  left: 25rem;
-  position: absolute;
-  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation-delay: 1s;
-  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  -webkit-animation-delay: 1s;
-}
-
-.img__drink3 {
-  top: 8rem;
-  right: -8rem;
-  position: absolute;
-  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation-delay: 1.5s;
-  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  -webkit-animation-delay: 1.5s;
-}
-
 .visual__wrap a {
   font-size: 0.9rem;
   line-height: 2.2rem;
   text-align: center;
+  height: 100%;
   width: 8rem;
   color: #e95a87;
   border: 2px solid #e95a87;
   border-radius: 5px;
   box-sizing: border-box;
-  position: absolute;
-  top: 16rem;
-  left: 7rem;
-  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s both;
   animation-delay: 2s;
-  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation: fade-in 1.2s both;
   -webkit-animation-delay: 2s;
 }
 .visual__wrap a:hover {
   background-color: #e95a87;
   color: white;
   transition: background-color 1s, color 1s;
+}
+
+.img_drink1-m,
+.img_drink2-m,
+.img_drink3-m {
+  display: none;
+}
+.drink1-box {
+  width: 45%;
+  top: 35%;
+  left: 15%;
+  position: absolute;
+  animation: fade-in 1.2s both;
+  animation-delay: 0.5s;
+  -webkit-animation: fade-in 1.2s both;
+  -webkit-animation-delay: 0.5s;
+}
+.drink2-box {
+  width: 50%;
+  top: 12%;
+  left: 35%;
+  position: absolute;
+  animation: fade-in 1.2s both;
+  animation-delay: 1s;
+  -webkit-animation: fade-in 1.2s both;
+  -webkit-animation-delay: 1s;
+}
+.drink3-box {
+  width: 29%;
+  top: 14%;
+  left: 83%;
+  position: absolute;
+  animation: fade-in 1.2s both;
+  animation-delay: 1.5s;
+  -webkit-animation: fade-in 1.2s both;
+  -webkit-animation-delay: 1.5s;
+}
+.drink1-box img,
+.drink2-box img,
+.drink3-box img {
+  width: 100%;
 }
 
 @keyframes fade-in {
@@ -100,138 +121,83 @@
   }
   .visual__wrap {
     margin: 0 auto;
-    width: auto;
+    width: 100%;
     height: 100%;
   }
-  .img__title {
+  .visual__text {
+    top: 4%;
+    left: 7%;
     width: 45%;
-    height: auto;
-    top: 3%;
+    height: 100%;
   }
-  .img__drink1 {
+  .visual__text div {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+  }
+  .visual__wrap a {
+    font-size: 0.8rem;
+    line-height: 2rem;
+    width: 7rem;
+  }
+  .drink1-box {
     width: 80%;
     top: 18%;
     left: 10%;
-    max-width: 32rem;
   }
-  .img__drink2 {
+  .drink2-box {
     width: 90%;
     top: 38%;
-    left: 10%;
-    max-width: 32rem;
+    left: 8%;
   }
-  .img__drink3 {
+  .drink3-box {
     width: 80%;
-    height: fit-content;
     top: 60%;
-    right: 8%;
+    left: 10%;
   }
-  .visual__wrap a {
-    left: 50%;
-    transform: translate(-50%, 90%);
-    top: 90%;
-    width: 7rem;
-    font-size: 0.8rem;
-    line-height: 1.8rem;
+  .img_drink1-m,
+  .img_drink2-m,
+  .img_drink3-m {
+    display: block;
+  }
+  .img__drink1-pc,
+  .img__drink2-pc,
+  .img__drink3-pc {
+    display: none;
   }
 }
 
-@media (min-width: 640px) and (max-width: 800px) {
+@media (min-width: 640px) and (max-width: 960px) {
   .visual {
-    height: 28rem;
+    height: 60vw;
     width: 100%;
     margin-top: 4.5rem;
   }
+}
+
+@media (min-width: 640px) and (max-width: 1199px) {
   .visual__wrap {
     margin: 0 auto;
     width: 100%;
   }
-  .img__title {
+  .visual__text {
+    top: 10%;
+    left: 3%;
     width: 20%;
-    top: 4rem;
   }
-  .img__drink1 {
-    width: 35%;
-    top: 13rem;
-    left: 12%;
-  }
-  .img__drink2 {
+  .drink1-box {
     width: 40%;
-    top: 7rem;
+    top: 40%;
+    left: 10%;
+  }
+  .drink2-box {
+    width: 45%;
+    top: 20%;
     left: 28%;
   }
-  .img__drink3 {
-    width: 23%;
-    top: 7rem;
-    right: 10%;
-  }
-  .visual__wrap a {
-    left: 7%;
-    top: 11rem;
-    width: 7rem;
-    font-size: 0.8rem;
-  }
-}
-
-@media (min-width: 800px) and (max-width: 960px) {
-  .visual {
-    height: 32rem;
-    width: 100%;
-    margin-top: 4.5rem;
-  }
-  .visual__wrap {
-    margin: 0 auto;
-    width: 100%;
-  }
-  .img__title {
-    width: 20%;
-    top: 4rem;
-  }
-  .img__drink1 {
-    width: 35%;
-    top: 13rem;
-    left: 12%;
-  }
-  .img__drink2 {
-    width: 40%;
-    top: 7rem;
-    left: 28%;
-  }
-  .img__drink3 {
-    width: 23%;
-    top: 7rem;
-    right: 10%;
-  }
-  .visual__wrap a {
-    left: 7%;
-    top: 13rem;
-    width: 7rem;
-    font-size: 0.8rem;
-  }
-}
-
-@media (min-width: 960px) and (max-width: 1199px) {
-  .img__title {
-    height: 7.8rem;
-    top: 4rem;
-  }
-  .img__drink1 {
-    width: 24rem;
-    top: 16rem;
-    left: 8rem;
-  }
-  .img__drink2 {
-    width: 28rem;
-    top: 8rem;
-    left: 18rem;
-  }
-  .img__drink3 {
-    width: 15rem;
-    top: 10rem;
-    right: 9rem;
-  }
-  .visual__wrap a {
-    top: 13rem;
-    left: 4rem;
+  .drink3-box {
+    width: 25%;
+    top: 25%;
+    left: 70%;
   }
 }

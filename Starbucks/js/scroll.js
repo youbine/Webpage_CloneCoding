@@ -12,10 +12,13 @@ function scrollImages() {
     const favHeight = favWrap.offsetTop;
     const magazineHeight = magazineWrap.offsetTop;
 
-    allHeight > favHeight && image.classList.add("scrollIn");
+    allHeight > favHeight
+      ? image.classList.add("scrollIn")
+      : image.classList.remove("scrollIn");
 
-    allHeight > magazineHeight &&
-      document.querySelector(".magazine__pic").classList.add("scrollIn");
+    allHeight > magazineHeight
+      ? document.querySelector(".magazine__pic").classList.add("scrollIn")
+      : document.querySelector(".magazine__pic").classList.remove("scrollIn");
 
     sbstorePics.forEach((pic) => {
       const sbstoreHeight = sbstoreWrap.offsetTop;
@@ -23,6 +26,9 @@ function scrollImages() {
       if (allHeight > sbstoreHeight) {
         pic.classList.add("scrollIn");
         document.querySelector(".sbstore__btn").classList.add("scrollIn");
+      } else {
+        pic.classList.remove("scrollIn");
+        document.querySelector(".sbstore__btn").classList.remove("scrollIn");
       }
     });
   });
