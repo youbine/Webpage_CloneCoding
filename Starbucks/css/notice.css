@@ -75,7 +75,7 @@
   overflow: hidden;
 }
 .notice__left__inner li {
-  -webkit-animation: scroll-up 0.5s ease-out;
+  -webkit-animation: scroll-up 0.5s;
   animation: scroll-up 0.5s ease-out;
 }
 .notice__left__inner a {

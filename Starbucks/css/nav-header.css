@@ -159,6 +159,7 @@ a:hover {
   padding-top: 5rem;
 }
 .mobile__menu__list {
+  overflow: hidden;
   width: 100%;
   border-bottom: 1px rgba(255, 255, 255, 0.151) solid;
 }

@@ -1,6 +1,6 @@
 ## ☕[Starbucks](https://youbine.github.io/Webpage_CloneCoding/Starbucks/index.html)
 
-- 반응형 웹 & 모바일
+- 반응형 웹 & 모바일 | Last Updated on: 05.08
 
 ## 🍺[Hitejinro](https://youbine.github.io/Webpage_CloneCoding/Hitejinro/index.html)
 

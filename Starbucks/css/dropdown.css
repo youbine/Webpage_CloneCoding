@@ -1,14 +1,3 @@
-@keyframes scale {
-  0% {
-    transform: scaleY(0);
-    transform-origin: 100% 0;
-  }
-  100% {
-    transform: scaleY(1);
-    transform-origin: 100% 0;
-  }
-}
-
 .dropdown {
   z-index: 99;
   position: absolute;
@@ -18,6 +7,7 @@
   top: 4rem;
   width: 100%;
   animation: scale 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-animation: scale 0.2s;
 }
 
 .dropdown__wrap {
@@ -64,4 +54,25 @@
 .dropdown__wrap ul li:not(:first-child) {
   font-size: 0.7rem;
   opacity: 0.6;
+}
+@-webkit-keyframes scale {
+  0% {
+    transform: scaleY(0);
+    transform-origin: 100% 0;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: 100% 0;
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scaleY(0);
+    transform-origin: 100% 0;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: 100% 0;
+  }
 }
