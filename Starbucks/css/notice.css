@@ -75,6 +75,7 @@
   overflow: hidden;
 }
 .notice__left__inner li {
+  position: absolute;
   -webkit-animation: scroll-up 0.5s;
   animation: scroll-up 0.5s ease-out;
 }

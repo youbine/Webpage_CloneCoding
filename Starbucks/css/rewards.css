@@ -180,7 +180,7 @@ p {
     font-size: 0.8rem;
   }
 }
-@media (min-width: 820px) and (max-width: 960px) {
+@media (min-width: 820px) and (max-width: 1070px) {
   .rewards {
     height: 25rem;
   }
@@ -199,6 +199,7 @@ p {
   .rewards__text p:nth-child(3) {
     margin-bottom: 5rem;
   }
+
   .rewards__contents,
   .rewards__gift {
     width: calc(40%);
