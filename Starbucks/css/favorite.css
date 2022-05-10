@@ -132,6 +132,7 @@
   }
   .favorite__btn {
     font-size: 0.8rem;
+    line-height: 2rem;
     position: absolute;
     bottom: 10%;
     left: 50%;
