@@ -133,10 +133,8 @@
   .favorite__btn {
     font-size: 0.8rem;
     line-height: 2rem;
-    position: absolute;
     bottom: 10%;
     left: 50%;
-    transform: translateX(-50%);
   }
   .scrollIn.second.favorite__text,
   .scrollIn.first.favorite__text {
