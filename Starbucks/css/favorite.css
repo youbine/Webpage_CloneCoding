@@ -135,6 +135,7 @@
     line-height: 2rem;
     bottom: 10%;
     left: 50%;
+    transform: translateX(-50%);
   }
   .scrollIn.second.favorite__text,
   .scrollIn.first.favorite__text {
