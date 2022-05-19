@@ -1,0 +1,114 @@
+.nav__main {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 3rem;
+}
+.nav__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  height: 100%;
+  width: 60rem;
+  margin: auto;
+}
+.nav__main ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.nav__main li {
+  height: 100%;
+  position: relative;
+}
+.nav__main li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 0.7rem;
+  color: #f5f5f7;
+  opacity: 0.7;
+  transition: opacity 0.5s;
+}
+.nav__main li a:hover {
+  opacity: 1;
+}
+.nav__logo,
+.nav__cart {
+  padding: 0 0.5rem;
+}
+.nav__logo a {
+  position: absolute;
+  width: 0.9rem;
+  height: 3rem;
+  background-image: url(https://www.apple.com/ac/globalnav/7/ko_KR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__b5er5ngrzxqq_large.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.nav__search a {
+  position: absolute;
+  width: 1rem;
+  height: 3rem;
+  background-image: url(https://www.apple.com/ac/globalnav/7/ko_KR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__cbllq1gkias2_large.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -3%;
+}
+.nav__cart a {
+  position: absolute;
+  width: 0.8rem;
+  height: 3rem;
+  background-image: url(https://www.apple.com/ac/globalnav/7/ko_KR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__yzte50i47ciu_large.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.nav__sub {
+  backdrop-filter: saturate(100%) blur(1rem);
+  background-color: rgba(255, 255, 255, 0.8);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 3.25rem;
+  border-bottom: 1px solid rgb(216, 216, 216);
+}
+.iPhonepro {
+  letter-spacing: 0.2px;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.nav__sub__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 19rem;
+  height: 100%;
+}
+.nav__sub__text a {
+  font-weight: 600;
+  opacity: 0.7;
+  letter-spacing: -0.1px;
+  font-size: 0.7rem;
+}
+.nav__sub__text a:first-child {
+  cursor: default;
+  opacity: 0.4;
+}
+.nav__sub__text a:last-child {
+  opacity: 1;
+  color: white;
+  background-color: #147ce5;
+  padding: 0.5rem 0.5rem;
+  border-radius: 13px;
+}
+.nav__sub__text a:last-child:hover {
+  background-color: #328ae2;
+}
+.nav__sub__text a:nth-of-type(2):hover,
+.nav__sub__text a:nth-of-type(3):hover {
+  color: #147ce5;
+}

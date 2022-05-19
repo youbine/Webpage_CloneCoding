@@ -1,0 +1,175 @@
+@import "css/reset.css";
+@import "css/nav.css";
+
+body {
+  height: 1000vh;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+main {
+  overflow: hidden;
+}
+
+.sec__one {
+  padding-top: 6rem;
+  width: 100%;
+  min-height: 100vh;
+  height: 120vh;
+  background-image: url(https://www.apple.com/v/iphone-13-pro/f/images/overview/hero/hero_endframe__3tq53uan9teq_xlarge.jpg);
+  background-position: center bottom;
+}
+.sec__one__text {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sec__one__text p:first-child {
+  letter-spacing: -1px;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+.sec__one__text p:last-child {
+  padding-top: 2rem;
+  letter-spacing: -6px;
+  font-weight: bolder;
+  font-size: 4.5rem;
+}
+.sec__two {
+  width: 100%;
+  min-height: 100vh;
+  height: 170vh;
+  background-image: url(https://www.apple.com/v/iphone-13-pro/f/images/overview/manifesto/wallpaper_startframe__crc5hsgtpzo2_large.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.sec__two__wrap {
+  word-break: keep-all;
+  padding: 5rem 0;
+  width: 58rem;
+  height: 80%;
+  margin: auto;
+}
+
+.sec__two__wrap span {
+  opacity: 0.4;
+  margin-right: 1rem;
+  line-height: 5.7rem;
+  font-weight: 900;
+  letter-spacing: -5px;
+  font-size: 4.3rem;
+  color: white;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+}
+.sec__two__wrap span.textToggle {
+  opacity: 1;
+}
+.sec__two__textContainer {
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: -1px;
+  line-height: 2rem;
+  color: white;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+}
+.sec__two__textContainer.textToggle {
+  opacity: 1;
+}
+.sec__two__textContainer p:nth-child(3) {
+  margin: 1.2rem 0;
+}
+
+.sec__two__textContainer p:first-child {
+  letter-spacing: -5px;
+  margin: 5rem 0;
+  font-weight: 900;
+  font-size: 4.3rem;
+}
+.sec__two__btn a {
+  margin-right: 2rem;
+}
+.sec__two__btn a:hover {
+  text-decoration: underline;
+}
+.sec__three {
+  height: 100vh;
+  padding: 5rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sec__three__container {
+  position: relative;
+  height: 100%;
+  width: 70rem;
+  display: flex;
+}
+.sec__three__proMax,
+.sec__three__pro {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  width: 35rem;
+  height: 100%;
+}
+.sec__three__proMax {
+  left: 11%;
+}
+.sec__three__pro {
+  right: 11%;
+}
+.sec__three__proMax div,
+.sec__three__pro div {
+  font-size: 1.3rem;
+  font-weight: 500;
+  word-spacing: -3px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  justify-content: center;
+  margin: 0 2rem;
+}
+.sec__three__proMax div {
+  align-items: flex-end;
+}
+.sec__three__proMax div p:last-child,
+.sec__three__pro div p:last-child {
+  font-size: 2.7rem;
+  line-height: 3.2rem;
+}
+.sec__three__pro img {
+  width: auto;
+  height: 36rem;
+  object-fit: contain;
+}
+.sec__three__proMax img {
+  width: auto;
+  height: 40rem;
+  object-fit: contain;
+}
+.sec__three__text {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-top: 4rem;
+}
+.sec__three__container small {
+  position: absolute;
+  font-size: 1.3rem;
+}
+.sec__three__text small {
+  font-size: 0.5rem;
+  position: absolute;
+}
