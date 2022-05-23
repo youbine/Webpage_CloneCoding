@@ -15,7 +15,7 @@ for (i = 0; i <= spans.length; i++) {
   //   name: "(box) " + i,
   // });
 }
-var scene2 = new ScrollMagic.Scene({
+new ScrollMagic.Scene({
   triggerElement: ".sec__two__textContainer",
   duration: "100%",
   offset: 0,
@@ -31,7 +31,7 @@ var maxSpread2 = TweenMax.to(".sec__three__proMax", 1, {
   left: "11%",
 });
 
-var spreadAni1 = new ScrollMagic.Scene({
+new ScrollMagic.Scene({
   triggerElement: ".sec__three",
   duration: "100%",
   offset: -180,
@@ -39,7 +39,8 @@ var spreadAni1 = new ScrollMagic.Scene({
 })
   .setTween(maxSpread)
   .addTo(controller);
-var spreadAni2 = new ScrollMagic.Scene({
+
+new ScrollMagic.Scene({
   triggerElement: ".sec__three",
   duration: "100%",
   offset: 570,
@@ -47,13 +48,15 @@ var spreadAni2 = new ScrollMagic.Scene({
 })
   .setTween(maxSpread2)
   .addTo(controller);
+
 var proSpread = TweenMax.to(".sec__three__pro", 1, {
   right: "5%",
 });
 var proSpread2 = TweenMax.to(".sec__three__pro", 1, {
   right: "11%",
 });
-var spreadAni1 = new ScrollMagic.Scene({
+
+new ScrollMagic.Scene({
   triggerElement: ".sec__three",
   duration: "100%",
   offset: -180,
@@ -61,7 +64,8 @@ var spreadAni1 = new ScrollMagic.Scene({
 })
   .setTween(proSpread)
   .addTo(controller);
-var spreadAni2 = new ScrollMagic.Scene({
+
+new ScrollMagic.Scene({
   triggerElement: ".sec__three",
   duration: "100%",
   offset: 570,
@@ -75,7 +79,7 @@ const slides = document.querySelectorAll(".sec__four__row");
 for (let i = 0; i < slides.length; i++) {
   var scene = new ScrollMagic.Scene({
     triggerElement: slides[i],
-    duration: "120%",
+    duration: i === 3 ? "1" : "100%",
     triggerHook: "onLeave",
   })
     .setPin(slides[i], { pushFollowers: false })
@@ -144,6 +148,113 @@ new ScrollMagic.Scene({
 })
   .setTween(".shieldfront, .shieldside", {
     y: "-40%",
+    ease: Linear.easeNone,
+  })
+  .addTo(controller);
+
+new ScrollMagic.Scene({
+  triggerElement: ".sec__four__row.water",
+  offset: -200,
+  duration: "70%",
+})
+  .setTween(".sec__four__row.water > div", {
+    y: "-20%",
+    ease: Linear.easeNone,
+  })
+  .addTo(controller);
+
+new ScrollMagic.Scene({
+  triggerElement: ".sec__five__section.Text ",
+  offset: 0,
+  duration: "150%",
+})
+  .setTween(".sec__five__section.Text > div", {
+    transform: "matrix(1, 0, 0, 1, 0, 0)",
+    ease: Linear.easeNone,
+  })
+  .addTo(controller)
+  .addIndicators();
+
+new ScrollMagic.Scene({
+  triggerElement: ".photoText",
+  offset: -350,
+  duration: "30%",
+})
+  .setTween(".fade-in", {
+    top: "0",
+    opacity: 1,
+    ease: Linear.easeNone,
+  })
+  .addTo(controller);
+
+new ScrollMagic.Scene({
+  triggerElement: ".contents > video",
+  offset: 700,
+  duration: "30%",
+})
+  .setTween(".videoText", {
+    top: "0",
+    opacity: 1,
+    ease: Linear.easeNone,
+  })
+  .addTo(controller);
+
+new ScrollMagic.Scene({
+  triggerElement: ".sec__five1",
+  offset: 0,
+  duration: "30%",
+})
+  .setTween(".sec__five1__text > p:last-child", {
+    top: "0",
+    opacity: 1,
+    ease: Linear.easeNone,
+  })
+  .addTo(controller);
+
+new ScrollMagic.Scene({
+  triggerElement: ".sec__five2",
+  offset: 100,
+  duration: "40%",
+})
+  .setTween(".sec__five2__text", {
+    top: "0",
+    opacity: 1,
+    ease: Linear.easeNone,
+  })
+  .addTo(controller);
+
+new ScrollMagic.Scene({
+  triggerElement: ".sec__five3",
+  offset: 100,
+  duration: "40%",
+})
+  .setTween(".sec__five3__text", {
+    top: "0",
+    opacity: 1,
+    ease: Linear.easeNone,
+  })
+  .addTo(controller);
+
+new ScrollMagic.Scene({
+  triggerElement: ".sec__five5",
+  offset: 100,
+  duration: "40%",
+})
+  .setTween(".sec__five5__text", {
+    top: "0",
+    opacity: 1,
+    ease: Linear.easeNone,
+  })
+  .addTo(controller);
+
+new ScrollMagic.Scene({
+  triggerElement: ".sec__five6",
+  offset: -120,
+  duration: "40%",
+})
+  .setTween(".sec__five6__text, .sec__five6__text > p:last-child", {
+    top: "0",
+    opacity: 1,
     ease: Linear.easeNone,
   })
   .addTo(controller);
