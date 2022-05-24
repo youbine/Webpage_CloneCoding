@@ -3,6 +3,7 @@
   width: 100%;
 }
 .sec__five__section {
+  height: auto;
   width: 100%;
 }
 .sec__five__section.Text {
@@ -81,14 +82,13 @@
   align-items: flex-start;
   justify-content: space-evenly;
   font-weight: 600;
-  top: 5rem;
+  transform: matrix(1, 0, 0, 1, 0, 100);
   opacity: 0.3;
   position: relative;
 }
 .fade-in {
-  position: relative;
   height: 100%;
-  top: 5rem;
+  transform: matrix(1, 0, 0, 1, 0, 100);
   opacity: 0.3;
 }
 .sec__five__section.night {
@@ -162,8 +162,7 @@
 .sec__five2__text,
 .sec__five1__text p:last-child {
   opacity: 0;
-  position: relative;
-  top: 30%;
+  transform: matrix(1, 0, 0, 1, 0, 100);
   padding-top: 1.5rem;
   line-height: 1.4;
   letter-spacing: -1px;

@@ -25,17 +25,12 @@ colorLists.forEach((color, index) => {
   });
 });
 
-//play video
-const shieldVideo = document.querySelector(".shieldside__item > video");
-const shieldImg = document.querySelector(".shieldside__item > img");
+const nav = document.querySelector(".nav__sub");
 
 window.addEventListener("scroll", () => {
-  const video = shieldVideo.getBoundingClientRect();
-  const PlayRange = video.top - shieldVideo.clientHeight / 2;
-  PlayRange < 0 ? shieldVideo.play() : shieldVideo.pause();
-  shieldVideo.addEventListener("ended", () => {
-    shieldVideo.pause();
-    shieldVideo.style.display = "none";
-    shieldImg.style.display = "block";
-  });
+  const scrollAt = window.scrollY;
+
+  scrollAt >= 500
+    ? (nav.style.position = "fixed")
+    : (nav.style.position = "sticky");
 });

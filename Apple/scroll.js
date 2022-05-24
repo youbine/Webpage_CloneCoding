@@ -33,8 +33,8 @@ var maxSpread2 = TweenMax.to(".sec__three__proMax", 1, {
 
 new ScrollMagic.Scene({
   triggerElement: ".sec__three",
-  duration: "100%",
-  offset: -180,
+  duration: "50%",
+  offset: -100,
   triggerHook: 0.5,
 })
   .setTween(maxSpread)
@@ -42,8 +42,8 @@ new ScrollMagic.Scene({
 
 new ScrollMagic.Scene({
   triggerElement: ".sec__three",
-  duration: "100%",
-  offset: 570,
+  duration: "80%",
+  offset: 450,
   triggerHook: 0.5,
 })
   .setTween(maxSpread2)
@@ -58,8 +58,8 @@ var proSpread2 = TweenMax.to(".sec__three__pro", 1, {
 
 new ScrollMagic.Scene({
   triggerElement: ".sec__three",
-  duration: "100%",
-  offset: -180,
+  duration: "50%",
+  offset: -100,
   triggerHook: 0.5,
 })
   .setTween(proSpread)
@@ -67,8 +67,8 @@ new ScrollMagic.Scene({
 
 new ScrollMagic.Scene({
   triggerElement: ".sec__three",
-  duration: "100%",
-  offset: 570,
+  duration: "80%",
+  offset: 450,
   triggerHook: 0.5,
 })
   .setTween(proSpread2)
@@ -79,7 +79,7 @@ const slides = document.querySelectorAll(".sec__four__row");
 for (let i = 0; i < slides.length; i++) {
   var scene = new ScrollMagic.Scene({
     triggerElement: slides[i],
-    duration: i === 3 ? "1" : "100%",
+    duration: i === 3 ? "1" : "120%",
     triggerHook: "onLeave",
   })
     .setPin(slides[i], { pushFollowers: false })
@@ -92,18 +92,18 @@ new ScrollMagic.Scene({
   duration: "70%",
 })
   .setTween(".iPhone__color > div, .sec__four__column.color.bgBlack > div", {
-    y: "-15%",
+    transform: "matrix(1, 0, 0, 1, 0, 0)",
     ease: Linear.easeNone,
   })
   .addTo(controller);
 
 new ScrollMagic.Scene({
   triggerElement: ".sec__four__row.color",
-  offset: 500,
+  offset: 600,
   duration: "70%",
 })
   .setTween(".iPhone__color > div, .sec__four__column.color.bgBlack > div", {
-    y: "-40%",
+    transform: "matrix(1, 0, 0, 1, 0, -100)",
     ease: Linear.easeNone,
   })
   .addTo(controller);
@@ -114,7 +114,7 @@ new ScrollMagic.Scene({
   duration: "70%",
 })
   .setTween(".steelPhone, .steelSide", {
-    y: "-20%",
+    transform: "matrix(1, 0, 0, 1, 0, 0)",
     ease: Linear.easeNone,
   })
   .addTo(controller);
@@ -125,7 +125,7 @@ new ScrollMagic.Scene({
   duration: "70%",
 })
   .setTween(".steelPhone, .steelSide", {
-    y: "-40%",
+    transform: "matrix(1, 0, 0, 1, 0, -100)",
     ease: Linear.easeNone,
   })
   .addTo(controller);
@@ -136,7 +136,7 @@ new ScrollMagic.Scene({
   duration: "70%",
 })
   .setTween(".shieldfront, .shieldside", {
-    y: "-20%",
+    transform: "matrix(1, 0, 0, 1, 0, 0)",
     ease: Linear.easeNone,
   })
   .addTo(controller);
@@ -147,7 +147,18 @@ new ScrollMagic.Scene({
   duration: "70%",
 })
   .setTween(".shieldfront, .shieldside", {
-    y: "-40%",
+    transform: "matrix(1, 0, 0, 1, 0, -100)",
+    ease: Linear.easeNone,
+  })
+  .addTo(controller);
+
+new ScrollMagic.Scene({
+  triggerElement: ".sec__four__row.shield",
+  offset: 100,
+  duration: "100%",
+})
+  .setTween(".shieldside__item > video", {
+    play: true,
     ease: Linear.easeNone,
   })
   .addTo(controller);
@@ -172,8 +183,7 @@ new ScrollMagic.Scene({
     transform: "matrix(1, 0, 0, 1, 0, 0)",
     ease: Linear.easeNone,
   })
-  .addTo(controller)
-  .addIndicators();
+  .addTo(controller);
 
 new ScrollMagic.Scene({
   triggerElement: ".photoText",
@@ -181,7 +191,7 @@ new ScrollMagic.Scene({
   duration: "30%",
 })
   .setTween(".fade-in", {
-    top: "0",
+    transform: "matrix(1, 0, 0, 1, 0, 0)",
     opacity: 1,
     ease: Linear.easeNone,
   })
@@ -193,7 +203,7 @@ new ScrollMagic.Scene({
   duration: "30%",
 })
   .setTween(".videoText", {
-    top: "0",
+    transform: "matrix(1, 0, 0, 1, 0, 0)",
     opacity: 1,
     ease: Linear.easeNone,
   })
@@ -205,7 +215,7 @@ new ScrollMagic.Scene({
   duration: "30%",
 })
   .setTween(".sec__five1__text > p:last-child", {
-    top: "0",
+    transform: "matrix(1, 0, 0, 1, 0, 0)",
     opacity: 1,
     ease: Linear.easeNone,
   })
@@ -217,7 +227,7 @@ new ScrollMagic.Scene({
   duration: "40%",
 })
   .setTween(".sec__five2__text", {
-    top: "0",
+    transform: "matrix(1, 0, 0, 1, 0, 0)",
     opacity: 1,
     ease: Linear.easeNone,
   })
@@ -229,7 +239,7 @@ new ScrollMagic.Scene({
   duration: "40%",
 })
   .setTween(".sec__five3__text", {
-    top: "0",
+    transform: "matrix(1, 0, 0, 1, 0, 0)",
     opacity: 1,
     ease: Linear.easeNone,
   })
@@ -241,7 +251,7 @@ new ScrollMagic.Scene({
   duration: "40%",
 })
   .setTween(".sec__five5__text", {
-    top: "0",
+    transform: "matrix(1, 0, 0, 1, 0, 0)",
     opacity: 1,
     ease: Linear.easeNone,
   })
@@ -253,8 +263,46 @@ new ScrollMagic.Scene({
   duration: "40%",
 })
   .setTween(".sec__five6__text, .sec__five6__text > p:last-child", {
+    transform: "matrix(1, 0, 0, 1, 0, 0)",
+    opacity: 1,
+    ease: Linear.easeNone,
+  })
+  .addTo(controller);
+new ScrollMagic.Scene({
+  triggerElement: ".zoom__sec1",
+  offset: -200,
+  duration: "150%",
+})
+  .setTween(".zoom__sec1 > img", {
+    transform: "matrix(1, 0, 0, 1, 0, -100)",
+    ease: Linear.easeNone,
+  })
+  .addTo(controller);
+
+new ScrollMagic.Scene({
+  triggerElement: ".zoom__sec2",
+  offset: -120,
+  duration: "40%",
+})
+  .setTween(".zoom__sec2 > p", {
     top: "0",
     opacity: 1,
     ease: Linear.easeNone,
   })
   .addTo(controller);
+
+const zoomTexts = document.querySelectorAll(".zoom__sec3 > div > p");
+
+for (i = 0; i <= zoomTexts.length; i++) {
+  new ScrollMagic.Scene({
+    triggerElement: ".zoom__sec3",
+    offset: i === 0 ? -120 : 120,
+    duration: "40%",
+  })
+    .setTween(zoomTexts[i], {
+      top: "0",
+      opacity: 1,
+      ease: Linear.easeNone,
+    })
+    .addTo(controller);
+}
