@@ -1,0 +1,96 @@
+.sec__three {
+  height: 50rem;
+  padding: 5rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sec__three__container {
+  position: relative;
+  height: 100%;
+  width: 70rem;
+  display: flex;
+  margin: auto;
+}
+.sec__three__proMax,
+.sec__three__pro {
+  display: flex;
+  align-items: flex-end;
+  width: 35rem;
+  height: 100%;
+}
+.sec__three__proMax {
+  transform: matrix(1, 0, 0, 1, 130, 0);
+}
+.sec__three__pro {
+  transform: matrix(1, 0, 0, 1, -130, 0);
+}
+
+.sec__three__proMax div,
+.sec__three__pro div {
+  font-size: 1.3rem;
+  font-weight: 500;
+  word-spacing: -3px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  justify-content: center;
+  margin: 0 2rem;
+}
+.sec__three__proMax div {
+  align-items: flex-end;
+}
+.sec__three__proMax div p:last-child,
+.sec__three__pro div p:last-child {
+  font-size: 2.7rem;
+  line-height: 3.2rem;
+}
+.sec__three__pro img {
+  width: auto;
+  height: 36rem;
+  object-fit: contain;
+}
+.sec__three__proMax img {
+  width: auto;
+  height: 40rem;
+  object-fit: contain;
+}
+.sec__three__text {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-top: 4rem;
+}
+.sec__three__container small {
+  position: absolute;
+  font-size: 1.3rem;
+}
+.sec__three__text small {
+  font-size: 0.5rem;
+  position: absolute;
+}
+@media screen and (max-width: 1068px) {
+  .sec__three {
+    height: 35rem;
+  }
+  .sec__three__container {
+    width: 100%;
+  }
+  .sec__three__proMax,
+  .sec__three__pro {
+    outline: 1px solid red;
+    width: 50%;
+  }
+  .sec__three__pro img {
+    width: auto;
+    height: 27rem;
+    object-fit: contain;
+  }
+  .sec__three__proMax img {
+    width: auto;
+    height: 31rem;
+    object-fit: contain;
+  }
+}

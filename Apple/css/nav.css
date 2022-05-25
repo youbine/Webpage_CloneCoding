@@ -113,3 +113,8 @@
 .nav__sub__text a:nth-of-type(3):hover {
   color: #147ce5;
 }
+@media screen and (max-width: 1068px) {
+  .nav__wrap {
+    width: auto;
+  }
+}

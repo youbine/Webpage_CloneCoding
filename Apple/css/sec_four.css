@@ -2,12 +2,13 @@
   overflow: hidden;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(1, 1fr 1fr 1fr 0.8fr);
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
 }
 .sec__four__row {
   width: 100%;
-  height: 120vh;
+  max-width: 144rem;
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   overflow: hidden;
@@ -16,25 +17,17 @@
   background-color: white;
 }
 .sec__four__column {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  /* navHeight */
+  padding-top: 4rem;
   overflow: hidden;
   background-color: white;
-  height: 100%;
-  width: 100%;
 }
 .sec__four__column.bgBlack {
   color: white;
   background-color: black;
 }
-.iPhone_color__wrap {
-  margin-top: -10vh;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+
 .iPhone__color {
   width: 100%;
   display: grid;
@@ -48,8 +41,7 @@
   width: 100%;
 }
 .iPhone__color div img {
-  height: auto;
-  max-width: 15rem;
+  height: 65vh;
 }
 .iPhone__color__picker {
   margin: 0 auto;
@@ -111,8 +103,7 @@
   color: black;
 }
 .sec__four__column.color.bgBlack div {
-  transform: matrix(1, 0, 0, 1, 0, 300);
-  margin-top: 40vh;
+  transform: matrix(1, 0, 0, 1, 0, 200);
   width: 100%;
   height: 100%;
 }
@@ -122,40 +113,35 @@
   width: 68vw;
   height: 62vw;
   min-width: 35rem;
-  min-height: 30rem;
   opacity: 0;
   transition: opacity 0.75s linear;
 }
 .sec__four__column.color.bgBlack div img.colorPhone {
   opacity: 1;
 }
-.steelSide__wrap {
-  margin-top: -10vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
+
 .steelPhone {
-  margin-top: 30vh;
   display: flex;
   justify-content: center;
-  transform: matrix(1, 0, 0, 1, 0, 300);
+  transform: matrix(1, 0, 0, 1, 0, 100);
 }
 .steelPhone img {
-  height: 120vh;
+  height: 100%;
+  max-height: 100vh;
 }
 .steelSide {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   transform: matrix(1, 0, 0, 1, 0, 100);
 }
 .steelSide img {
-  height: 75vh;
-  max-height: 50rem;
+  height: 70vh;
+  max-height: 45rem;
 }
-.sec__four__column.steel p {
+.sec__four__column.steel div p {
+  margin: 0 auto;
+  position: relative;
   text-align: center;
   font-size: 1rem;
   letter-spacing: -1px;
@@ -164,19 +150,14 @@
   width: 12rem;
 }
 
-.shieldfront__wrap {
-  margin-top: -10vh;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 .shieldfront {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   transform: matrix(1, 0, 0, 1, 0, 100);
-  margin: 0 auto;
   margin-bottom: 1rem;
 }
-.sec__four__column.shield p {
+.sec__four__column.shield div p {
   text-align: center;
   font-size: 1.1rem;
   letter-spacing: -0.5px;
@@ -184,14 +165,11 @@
   font-weight: 600;
 }
 .shieldfront img {
-  width: 16vw;
-  height: auto;
-  max-width: 16rem;
+  height: 70vh;
+  max-height: 45rem;
 }
-
 .shieldside {
-  margin-top: 40vh;
-  transform: matrix(1, 0, 0, 1, 0, 300);
+  transform: matrix(1, 0, 0, 1, 0, 200);
 }
 .shieldside__item {
   display: flex;
@@ -207,6 +185,7 @@
   height: 100%;
 }
 .shieldside__item img {
+  display: none;
   position: absolute;
   width: 73%;
   height: 100%;
@@ -235,4 +214,56 @@
   position: relative;
   top: 25%;
   height: 100%;
+}
+
+@media screen and (max-width: 1068px) {
+  .iPhone__color__picker {
+    width: 10rem;
+  }
+  .iPhone__color__picker ul {
+    height: 3rem;
+  }
+  .iPhone__color__picker ul label {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .iPhone__color__picker ul li {
+    width: 1rem;
+    height: 1rem;
+  }
+  .iPhone__color__picker p span {
+    line-height: 1rem;
+    font-size: 0.9rem;
+  }
+  .sec__four__column.steel p {
+    font-size: 0.7rem;
+    line-height: 1rem;
+    width: 10rem;
+  }
+  .sec__four__column.shield div p {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+  .sec__four__row.water p {
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+  }
+  .sec__four__row.water div {
+    position: relative;
+    top: 25%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1370px) {
+  .shieldfront img,
+  .iPhone__color div img {
+    max-height: 28rem;
+  }
+  .steelSide img {
+    max-height: 30rem;
+  }
+  .shieldside__item {
+    max-width: 30rem;
+    max-height: 40rem;
+  }
 }
