@@ -6,7 +6,7 @@
 
 - 반응형 웹
 
-## 🍎[Apple](https://youbine.github.io/Webpage_CloneCoding/Museum/index.html) 
+## 🍎[Apple](https://youbine.github.io/Webpage_CloneCoding/Apple/index.html)
 
 - 반응형 웹 스크롤 애니메이션 | Last Updated on: 05.25
 
