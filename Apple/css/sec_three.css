@@ -71,7 +71,7 @@
   font-size: 0.5rem;
   position: absolute;
 }
-@media screen and (max-width: 1068px) {
+@media screen and (max-width: 1024px) {
   .sec__three {
     height: 35rem;
   }

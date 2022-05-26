@@ -1,9 +1,7 @@
 .sec__four {
+  margin: 0 auto;
   overflow: hidden;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
 }
 .sec__four__row {
   width: 100%;
@@ -17,6 +15,7 @@
   background-color: white;
 }
 .sec__four__column {
+  height: 100%;
   width: 100%;
   /* navHeight */
   padding-top: 4rem;
@@ -108,10 +107,9 @@
   height: 100%;
 }
 .sec__four__column.color.bgBlack div img {
-  position: absolute;
   padding-left: 7rem;
   width: 68vw;
-  height: 62vw;
+  height: auto;
   min-width: 35rem;
   opacity: 0;
   transition: opacity 0.75s linear;
@@ -216,7 +214,31 @@
   height: 100%;
 }
 
-@media screen and (max-width: 1068px) {
+@media screen and (max-width: 1370px) {
+  .sec__four__row {
+    max-height: 50rem;
+  }
+  .shieldfront img,
+  .iPhone__color div img {
+    max-height: 28rem;
+  }
+  .steelPhone img {
+    max-height: 50rem;
+  }
+  .steelSide img {
+    max-height: 30rem;
+  }
+  .shieldside__item {
+    max-width: 30rem;
+    max-height: 50rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sec__four__row {
+    min-height: 40rem;
+    max-height: 45rem;
+  }
   .iPhone__color__picker {
     width: 10rem;
   }
@@ -244,6 +266,14 @@
     font-size: 0.9rem;
     line-height: 1.3rem;
   }
+  .steelPhone img {
+    max-height: 40rem;
+  }
+  .sec__four__column.color.bgBlack div img {
+    padding-left: 5rem;
+    height: 50rem;
+    width: 50rem;
+  }
   .sec__four__row.water p {
     line-height: 1.5rem;
     font-size: 1.1rem;
@@ -254,16 +284,11 @@
     height: 100%;
   }
 }
-@media screen and (max-width: 1370px) {
-  .shieldfront img,
-  .iPhone__color div img {
-    max-height: 28rem;
-  }
-  .steelSide img {
-    max-height: 30rem;
-  }
-  .shieldside__item {
-    max-width: 30rem;
-    max-height: 40rem;
+
+@media screen and (min-width: 2500px) {
+  .sec__four__row {
+    width: 100%;
+    max-width: 144rem;
+    height: 100vh;
   }
 }

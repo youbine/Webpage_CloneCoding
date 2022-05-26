@@ -60,7 +60,7 @@
 .sec__two__btn a:hover {
   text-decoration: underline;
 }
-@media screen and (max-width: 1068px) {
+@media screen and (max-width: 1024px) {
   .sec__two__wrap {
     width: 45rem;
   }

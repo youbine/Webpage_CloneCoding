@@ -82,7 +82,7 @@ for (let i = 0; i < slides.length; i++) {
     triggerHook: "onLeave",
   })
     .setPin(slides[i], { pushFollowers: false })
-    .addTo(controller)
+    .addTo(controller);
 }
 
 new ScrollMagic.Scene({
@@ -140,85 +140,83 @@ new ScrollMagic.Scene({
   })
   .addTo(controller);
 
-new ScrollMagic.Scene({
-  triggerElement: ".sec__five__section.Text ",
-  offset: 0,
-  duration: "120%",
-})
-  .setTween(".sec__five__section.Text > div", {
-    transform: "matrix(1, 0, 0, 1, 0, 0)",
-    ease: Linear.easeNone,
-  })
-  .addTo(controller)
+function moblie() {
+  if (window.innerWidth <= 1024) {
+    return;
+  } else {
+    const height = document.querySelector(".sec__five__section.Text");
 
-new ScrollMagic.Scene({
-  triggerElement: ".photoText",
-  offset: -350,
-  duration: "30%",
-})
-  .setTween(".fade-in", {
-    transform: "matrix(1, 0, 0, 1, 0, 0)",
-    opacity: 1,
-    ease: Linear.easeNone,
-  })
-  .addTo(controller);
+    new ScrollMagic.Scene({
+      triggerElement: ".sec__five__section.Text",
+      duration:
+        window.innerWidth <= 1370
+          ? height.offsetHeight - 400
+          : height.offsetHeight - 500,
+      triggerHook: 0.8,
+    })
+      .setPin(".sec__five__section.Text > div", { pushFollowers: true })
+      .addTo(controller);
+  }
+}
+moblie();
+var sec__fiveAni = [
+  ".photoText",
+  ".contents > video",
+  ".sec__five1",
+  ".sec__five2",
+  ".sec__five3",
+  ".sec__five5",
+  ".sec__five6",
+];
+var sec__fiveEle = [
+  ".photoText > div:last-child",
+  ".videoText",
+  ".sec__five1__text > p:last-child",
+  ".sec__five2__text",
+  ".sec__five3__text",
+  ".sec__five5__text",
+  ".sec__five6__text",
+];
+var offset = [0, 700, 0, 100, 100, 0, -120];
+var duration = ["30%", "30%", "40%", "40%", "40%", "40%", "40%"];
 
-new ScrollMagic.Scene({
-  triggerElement: ".contents > video",
-  offset: 700,
-  duration: "30%",
-})
-  .setTween(".videoText", {
-    transform: "matrix(1, 0, 0, 1, 0, 0)",
-    opacity: 1,
-    ease: Linear.easeNone,
-  })
-  .addTo(controller);
+for (var i = 0; i < sec__fiveAni.length; i++) {
+  var currentAni = sec__fiveAni[i];
+  var currentEle = sec__fiveEle[i];
+  let currentOffset = offset[i];
+  let currentDuration = duration[i];
 
-new ScrollMagic.Scene({
-  triggerElement: ".sec__five1",
-  offset: 0,
-  duration: "30%",
-})
-  .setTween(".sec__five1__text > p:last-child", {
-    transform: "matrix(1, 0, 0, 1, 0, 0)",
-    opacity: 1,
-    ease: Linear.easeNone,
+  var text = TweenMax.fromTo(
+    currentEle,
+    1,
+    {
+      transform: "matrix(1, 0, 0, 1, 0, 100)",
+      opacity: 0.3,
+      ease: Linear.easeNone,
+    },
+    {
+      transform: "matrix(1, 0, 0, 1, 0, 0)",
+      opacity: 1,
+      ease: Linear.easeNone,
+    }
+  );
+
+  new ScrollMagic.Scene({
+    triggerElement: currentAni,
+    offset: currentOffset,
+    duration: currentDuration,
   })
-  .addTo(controller);
+    .setTween(text)
+    .addTo(controller);
+}
 
 new ScrollMagic.Scene({
   triggerElement: ".sec__five1",
   offset: 0,
   duration: "100%",
-  reverse: true,
 })
   .setTween(".sec__five1 > img", {
     transform: "matrix(1, 0, 0, 1, 0, -150)",
-    ease: Linear.easeNone,
-  })
-  .addTo(controller);
-
-new ScrollMagic.Scene({
-  triggerElement: ".sec__five2",
-  offset: 100,
-  duration: "40%",
-})
-  .setTween(".sec__five2__text", {
-    transform: "matrix(1, 0, 0, 1, 0, 0)",
-    opacity: 1,
-    ease: Linear.easeNone,
-  })
-  .addTo(controller);
-
-new ScrollMagic.Scene({
-  triggerElement: ".sec__five3",
-  offset: 100,
-  duration: "40%",
-})
-  .setTween(".sec__five3__text", {
-    transform: "matrix(1, 0, 0, 1, 0, 0)",
-    opacity: 1,
     ease: Linear.easeNone,
   })
   .addTo(controller);
@@ -234,29 +232,6 @@ new ScrollMagic.Scene({
   })
   .addTo(controller);
 
-new ScrollMagic.Scene({
-  triggerElement: ".sec__five5",
-  offset: 100,
-  duration: "40%",
-})
-  .setTween(".sec__five5__text", {
-    transform: "matrix(1, 0, 0, 1, 0, 0)",
-    opacity: 1,
-    ease: Linear.easeNone,
-  })
-  .addTo(controller);
-
-new ScrollMagic.Scene({
-  triggerElement: ".sec__five6",
-  offset: -120,
-  duration: "40%",
-})
-  .setTween(".sec__five6__text, .sec__five6__text > p:last-child", {
-    transform: "matrix(1, 0, 0, 1, 0, 0)",
-    opacity: 1,
-    ease: Linear.easeNone,
-  })
-  .addTo(controller);
 new ScrollMagic.Scene({
   triggerElement: ".zoom__sec1",
   offset: -200,
@@ -302,3 +277,25 @@ new ScrollMagic.Scene({
     ease: Linear.easeNone,
   })
   .addTo(controller);
+
+const images = [
+  ".iPhone__color > div",
+  ".sec__four__column.color.bgBlack > div",
+  ".steelPhone",
+  ".steelSide",
+  ".shieldfront",
+  ".shieldside",
+];
+
+// window.addEventListener("resize", () => {
+
+//   for (i = 0; i <= images.length; i++) {
+//     document.querySelector(images[i]).style.transform = "none";
+//   }
+
+// for (i = 0; i <= sec__fiveEle.length; i++) {
+//   (document.querySelector(sec__fiveEle[i]).style.opacity = 1),
+//     (document.querySelector(sec__fiveEle[i]).style.transform =
+//       "matrix(1, 0, 0, 1, 0, 0)");
+// }
+// });
