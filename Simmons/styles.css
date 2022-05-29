@@ -1,0 +1,29 @@
+@import "css/reset.css";
+
+body {
+  height: 200vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+  height: 4rem;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+.nav__wrap {
+  margin: auto;
+  display: flex;
+  height: 100%;
+  width: 70%;
+}
+.nav__wrap a {
+  margin: auto;
+  cursor: pointer;
+  width: 5rem;
+  height: 100%;
+}
+.nav__wrap a img {
+  margin-top: 0.5rem;
+}

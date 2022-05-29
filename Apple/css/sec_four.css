@@ -107,6 +107,7 @@
   height: 100%;
 }
 .sec__four__column.color.bgBlack div img {
+  position: absolute;
   padding-left: 7rem;
   width: 68vw;
   height: auto;
