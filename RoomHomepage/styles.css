@@ -1,0 +1,332 @@
+@import "css/reset.css";
+
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap");
+
+:root {
+  --DarkGray: hsl(0, 0%, 63%);
+  --Black: hsl(0, 0%, 0%);
+  --White: hsl(0, 0%, 100%);
+  --VeryDarkGray: hsl(0, 0%, 27%);
+}
+
+html {
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "League Spartan", sans-serif;
+}
+nav {
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10%;
+}
+.nav__wrap {
+  display: flex;
+  width: 40%;
+  height: 100%;
+  align-items: center;
+  margin-left: 5%;
+}
+.mobileNavBtn {
+  display: none;
+}
+.nav__close {
+  display: none;
+}
+.logo {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  width: 14%;
+}
+.logo img {
+  width: 100%;
+}
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav a {
+  font-size: 1.2vmax;
+  color: var(--White);
+  position: relative;
+}
+nav a:hover::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 1em;
+  height: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 0.15em solid var(--White);
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 65vh 35vh;
+}
+.first {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
+  font-size: 20px;
+  min-height: 0;
+  min-width: 0;
+}
+.main__images {
+  overflow: hidden;
+  height: 100%;
+}
+.slide .mobile {
+  display: none;
+}
+.slide {
+  display: grid;
+  grid-template-columns: repeat(3, 100%);
+  width: 100%;
+  height: 100%;
+  transition: transform 0.75s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+.slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+}
+.textWrap {
+  width: 100%;
+  overflow: hidden;
+}
+.slide_text {
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 100%);
+  transition: transform 0.75s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+.slide_text div {
+  width: 70%;
+  margin: auto;
+}
+.textWrap h2 {
+  letter-spacing: -0.05em;
+  font-size: 3vmax;
+  font-weight: 700;
+  margin-bottom: 4%;
+}
+.textWrap p {
+  line-height: 1.3;
+  color: var(--DarkGray);
+  font-size: 1vmax;
+}
+.shopBtn {
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 70%;
+  margin: 4% auto;
+  font-size: 1.2vmax;
+  letter-spacing: 0.5em;
+}
+.shopBtn img {
+  width: 10%;
+}
+.shopBtn:hover {
+  opacity: 0.5;
+}
+.slideBtn {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 26.5%;
+  height: 15%;
+}
+.slidePrev,
+.slideNext {
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  background-color: var(--Black);
+}
+@media (hover: hover) {
+  .slideBtn span:hover {
+    background-color: var(--VeryDarkGray);
+  }
+}
+
+.slideBtn img {
+  width: auto;
+  height: 40%;
+
+  max-height: 2rem;
+}
+.unable {
+  pointer-events: none;
+  background-color: #ff00004f;
+}
+.second {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  min-height: 0;
+  min-width: 0;
+}
+.second__pic {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.second__pic img {
+  height: 100%;
+  width: 100% !important;
+  object-fit: cover;
+}
+.about {
+  width: 80%;
+  margin: auto;
+}
+.about h2 {
+  text-transform: uppercase;
+  font-size: 1.2vmax;
+  font-weight: 700;
+  letter-spacing: 0.5em;
+  margin-bottom: 3%;
+}
+.about p {
+  line-height: 1.3;
+  color: var(--DarkGray);
+  font-size: 1vmax;
+}
+
+@media screen and (max-width: 1024px) {
+  .slideBtn {
+    max-height: 5rem;
+    max-width: 10rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main {
+    height: auto;
+    width: 100%;
+    display: block;
+  }
+  .slideBtn {
+    max-height: 5rem;
+    max-width: 10rem;
+  }
+  .slide .pc {
+    display: none;
+  }
+  .slide .mobile {
+    display: block;
+  }
+  .first {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+    font-size: 20px;
+  }
+  .slideBtn {
+    top: -15%;
+    right: 0;
+  }
+  .slide_text {
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    transition: transform 0.75s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  }
+  .slide_text div {
+    padding-top: 2rem;
+    width: 80%;
+  }
+  .textWrap h2 {
+    font-size: 6vmax;
+  }
+  .textWrap p {
+    font-size: 2.2vmax;
+  }
+  .shopBtn {
+    padding-bottom: 2rem;
+    width: 80%;
+    font-size: 2.2vmax;
+  }
+  .shopBtn img {
+    width: 13%;
+  }
+  .second {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .about {
+    padding: 2rem 0;
+  }
+  .about h2 {
+    font-size: 2.2vmax;
+    margin-bottom: 5%;
+    letter-spacing: 0.3em;
+  }
+  .about p {
+    font-size: 2.2vmax;
+  }
+  nav {
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+  }
+  .nav__close {
+    display: block;
+  }
+  .mobileNavBtn {
+    height: 100%;
+    display: grid;
+    place-items: center;
+    z-index: 53;
+  }
+  .logo {
+    position: absolute;
+    height: 100%;
+    width: 90%;
+  }
+  .logo img {
+    width: 25%;
+  }
+  nav ul {
+    margin-left: -5%;
+    z-index: 55;
+    position: absolute;
+    background-color: var(--White);
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform 0.75s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  }
+  .hide {
+    transform: translateY(-100%);
+  }
+  nav a {
+    font-size: 3vmax;
+    color: var(--Black);
+    position: relative;
+    opacity: 0;
+    transition: opacity 1s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  }
+  .opacity {
+    opacity: 1;
+  }
+}
